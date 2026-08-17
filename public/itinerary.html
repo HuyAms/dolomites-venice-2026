@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dolomites + Venice · 7–13 September 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1c1a17; --ink-2:#4a4540; --ink-3:#7d766e;
+  --paper:#faf7f2; --card:#fffdfa; --line:#e6ded2;
+  --alpine:#2f5d50; --alpine-l:#e6efeb;
+  --lagoon:#1e4e6b; --lagoon-l:#e4eef4;
+  --danger:#9d2b2b; --danger-l:#fbeaea;
+  --warn:#8a5a12; --warn-l:#fdf2df;
+  --good:#2f5d50; --good-l:#e6efeb;
+  --gold:#a8802c;
+  --r:14px; --sh:0 1px 2px rgba(28,26,23,.05), 0 8px 24px -12px rgba(28,26,23,.15);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth; scroll-padding-top:80px}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font:16px/1.65 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1080px; margin:0 auto; padding:0 24px}
+
+/* ---------- header ---------- */
+header.hero{
+  background:linear-gradient(160deg,#22443b 0%,#2f5d50 42%,#1e4e6b 100%);
+  color:#f4efe6; padding:64px 0 56px; position:relative; overflow:hidden;
+}
+header.hero::after{
+  content:""; position:absolute; inset:auto 0 -1px 0; height:80px;
+  background:linear-gradient(to bottom,transparent,var(--paper));
+  opacity:.15;
+}
+.eyebrow{
+  font:600 12px/1 Inter; letter-spacing:.16em; text-transform:uppercase;
+  color:#a9c9bd; margin:0 0 18px;
+}
+h1{
+  font:700 clamp(38px,6vw,66px)/1.02 Fraunces,Georgia,serif;
+  margin:0 0 18px; letter-spacing:-.02em;
+}
+.sub{font-size:19px; color:#cfe0d8; max-width:62ch; margin:0 0 30px}
+.facts{display:flex; flex-wrap:wrap; gap:10px}
+.fact{
+  background:rgba(255,255,255,.11); border:1px solid rgba(255,255,255,.16);
+  padding:8px 14px; border-radius:999px; font-size:13.5px; font-weight:500;
+}
+
+/* ---------- nav ---------- */
+nav{
+  position:sticky; top:0; z-index:50; background:rgba(250,247,242,.9);
+  backdrop-filter:saturate(180%) blur(14px); border-bottom:1px solid var(--line);
+}
+nav .wrap{display:flex; gap:4px; overflow-x:auto; padding-top:9px; padding-bottom:9px; scrollbar-width:none}
+nav .wrap::-webkit-scrollbar{display:none}
+nav a{
+  flex:0 0 auto; padding:8px 13px; border-radius:9px; text-decoration:none;
+  color:var(--ink-2); font-size:14px; font-weight:500; white-space:nowrap;
+}
+nav a:hover{background:#efe8dd; color:var(--ink)}
+
+/* ---------- sections ---------- */
+section{padding:56px 0 8px}
+h2{
+  font:600 clamp(26px,3.6vw,36px)/1.15 Fraunces,Georgia,serif;
+  margin:0 0 8px; letter-spacing:-.015em;
+}
+h2 .num{color:var(--ink-3); font-size:.62em; font-weight:400; margin-right:.5em; font-variant-numeric:tabular-nums}
+.lede{color:var(--ink-2); font-size:17px; max-width:70ch; margin:0 0 28px}
+h3{font:600 20px/1.3 Fraunces,Georgia,serif; margin:34px 0 12px}
+h4{font:600 15px/1.4 Inter; margin:22px 0 8px; color:var(--ink-2)}
+p{margin:0 0 14px}
+a{color:var(--lagoon)}
+hr{border:0; border-top:1px solid var(--line); margin:48px 0}
+
+/* ---------- cards ---------- */
+.card{
+  background:var(--card); border:1px solid var(--line); border-radius:var(--r);
+  padding:24px 26px; box-shadow:var(--sh); margin:0 0 20px;
+}
+.grid{display:grid; gap:18px; grid-template-columns:repeat(auto-fit,minmax(272px,1fr))}
+.card h3:first-child, .card h4:first-child{margin-top:0}
+
+/* ---------- callouts ---------- */
+.callout{
+  border-radius:12px; padding:16px 18px 16px 20px; margin:0 0 18px;
+  border-left:4px solid; font-size:15.5px;
+}
+.callout p:last-child{margin-bottom:0}
+.callout .tag{
+  display:block; font:700 11.5px/1 Inter; letter-spacing:.1em;
+  text-transform:uppercase; margin-bottom:7px;
+}
+.c-danger{background:var(--danger-l); border-color:var(--danger)}
+.c-danger .tag{color:var(--danger)}
+.c-warn{background:var(--warn-l); border-color:var(--warn)}
+.c-warn .tag{color:var(--warn)}
+.c-good{background:var(--good-l); border-color:var(--good)}
+.c-good .tag{color:var(--good)}
+.c-info{background:var(--lagoon-l); border-color:var(--lagoon)}
+.c-info .tag{color:var(--lagoon)}
+
+/* ---------- tables ---------- */
+.tw{overflow-x:auto; margin:0 0 20px; border:1px solid var(--line); border-radius:12px; background:var(--card)}
+table{border-collapse:collapse; width:100%; font-size:14.5px; min-width:460px}
+th{
+  text-align:left; padding:11px 15px; background:#f3ece1; color:var(--ink-2);
+  font:600 12px/1.3 Inter; letter-spacing:.06em; text-transform:uppercase;
+  border-bottom:1px solid var(--line); white-space:nowrap;
+}
+td{padding:11px 15px; border-bottom:1px solid #f0e9de; vertical-align:top}
+tr:last-child td{border-bottom:0}
+tbody tr:hover{background:#fdfaf5}
+td.n{font-variant-numeric:tabular-nums; white-space:nowrap}
+
+/* ---------- day schedule ---------- */
+.day{
+  background:var(--card); border:1px solid var(--line); border-radius:var(--r);
+  box-shadow:var(--sh); margin:0 0 26px; overflow:hidden;
+}
+.day > header{
+  padding:20px 26px; border-bottom:1px solid var(--line);
+  display:flex; flex-wrap:wrap; align-items:baseline; gap:8px 14px;
+}
+.day.alp > header{background:var(--alpine-l)}
+.day.lag > header{background:var(--lagoon-l)}
+.day .dnum{
+  font:600 12px/1 Inter; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-3);
+}
+.day h3{font:600 23px/1.2 Fraunces,Georgia,serif; margin:0; flex:1 1 auto}
+.day .dmeta{font-size:13.5px; color:var(--ink-2)}
+.sched{list-style:none; margin:0; padding:6px 0}
+.sched li{
+  display:grid; grid-template-columns:104px 1fr; gap:18px;
+  padding:11px 26px; border-bottom:1px solid #f4ede2; align-items:start;
+}
+.sched li:last-child{border-bottom:0}
+.sched .t{
+  font:500 13.5px/1.5 "JetBrains Mono",ui-monospace,monospace;
+  color:var(--ink-2); font-variant-numeric:tabular-nums; padding-top:1px;
+}
+.sched li.lock{background:#fdf2df}
+.sched li.lock .t{color:var(--warn); font-weight:700}
+.sched li.stop{background:var(--danger-l)}
+.sched li.stop .t{color:var(--danger); font-weight:700}
+.sched .w{font-size:15px}
+.sched .w small{display:block; color:var(--ink-3); font-size:13.5px; margin-top:3px}
+.day footer{padding:18px 26px; background:#faf5ec; border-top:1px solid var(--line); font-size:14.5px}
+.day footer p:last-child{margin-bottom:0}
+
+/* ---------- misc ---------- */
+.pill{
+  display:inline-block; padding:2px 9px; border-radius:999px;
+  font:600 11.5px/1.7 Inter; letter-spacing:.03em; vertical-align:2px;
+}
+.p-lock{background:#fdf2df; color:var(--warn)}
+.p-book{background:#e9e3f5; color:#5a3f8f}
+.p-un{background:#f0ece6; color:var(--ink-3)}
+.p-ok{background:var(--good-l); color:var(--good)}
+ul.tight{margin:0 0 16px; padding-left:20px}
+ul.tight li{margin-bottom:7px}
+.money{font-variant-numeric:tabular-nums; font-weight:600}
+code{background:#f0e9de; padding:1.5px 6px; border-radius:5px; font:500 13.5px "JetBrains Mono",monospace}
+.src{font-size:13px; color:var(--ink-3); word-break:break-word}
+.src a{color:var(--ink-3)}
+footer.end{
+  margin-top:64px; padding:36px 0 56px; border-top:1px solid var(--line);
+  color:var(--ink-3); font-size:14px;
+}
+@media print{
+  nav{display:none} header.hero{background:#2f5d50 !important; -webkit-print-color-adjust:exact; print-color-adjust:exact}
+  .day,.card,.tw{break-inside:avoid; box-shadow:none}
+  section{padding-top:24px}
+}
+@media (max-width:620px){
+  .sched li{grid-template-columns:1fr; gap:3px}
+  .sched .t{padding-top:0}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Trip dossier · researched against primary sources</p>
+    <h1>Dolomites&nbsp;&amp; Venice</h1>
+    <p class="sub">Monday 7 – Sunday 13 September 2026. <strong>Five travellers</strong>, six on Tuesday when the photographer joins. 7-seater hired at VCE and driven Mon–Thu, returned Thursday evening; Venice on foot and water after that.</p>
+    <div class="facts">
+      <span class="fact">HEL → VCE, land ~09:00 Mon</span>
+      <span class="fact">Residence Fink, Mustergasse 9, Bolzano · Mon night</span>
+      <span class="fact">Hölzlhof, Walchhorn 7/a, Brunico · Tue + Wed</span>
+      <span class="fact">Grado 3, Marghera · Thu–Sat</span>
+      <span class="fact">Car returned Thu 10 Sep, 18:00</span>
+      <span class="fact">Party of 5 · +photographer Tue</span>
+      <span class="fact">7-seater · VCE pickup &amp; return</span>
+    </div>
+  </div>
+</header>
+
+<nav><div class="wrap">
+  <a href="#risks">Read first</a>
+  <a href="#costs">Costs for 5</a>
+  <a href="#itinerary">Itinerary</a>
+  <a href="#booking">Book by when</a>
+  <a href="#driving">Driving &amp; ZTL</a>
+  <a href="#seceda">Seceda</a>
+  <a href="#siusi">Alpe di Siusi</a>
+  <a href="#wed">Wednesday</a>
+  <a href="#venice">Venice</a>
+  <a href="#food">Food</a>
+  <a href="#mistakes">Mistakes</a>
+  <a href="#recheck">Re-check</a>
+</div></nav>
+
+<!-- ============ RISKS ============ -->
+<section id="risks"><div class="wrap">
+  <h2><span class="num">01</span>Read this first</h2>
+  <p class="lede">Five things shape this trip and all five are decided before you leave. Everything else is detail.</p>
+
+  <div class="callout c-danger">
+    <span class="tag">1 · Alpe di Siusi can only be reached by cable car in the afternoon</span>
+    <p><strong>The access road from St. Valentin up to Compatsch is closed to private uphill traffic 09:00–17:00.</strong> No ticket buys your way past it; the 2026 parking reservation requires clearing the checkpoint by <strong>09:00</strong> and the barrier by <strong>09:30</strong>. An afternoon arrival by car is refused at the gate.</p>
+    <p><strong>So you go up by lift.</strong> Drive Ortisei → <strong>Seis/Siusi</strong> (~30 min), park <strong>free</strong> at the cable-car valley station, and ride the <strong>Seiser Alm Bahn</strong> to Compatsch — <span class="money">€30</span> return each, 15 minutes. The official access page: <em>"Those using the cable car from Seis bypass these restrictions entirely."</em></p>
+  </div>
+
+  <div class="callout c-danger">
+    <span class="tag">2 · The last cable car down may be 18:00, not 19:00</span>
+    <p>Going up by lift means coming down by lift. Two official sources disagree on the last run for 8 September: the printed 2026 operator brochure gives <strong>08:00–18:00</strong> in both its German and Italian columns; the English web pages say 19:00. The brochure is the more authoritative document.</p>
+    <p><strong>Plan for 18:00 until you've confirmed otherwise</strong> — miss it and you are stranded on the plateau. Email <span class="src">info@seiseralmbahn.it</span>. This is the most important message to send.</p>
+  </div>
+
+  <div class="callout c-warn">
+    <span class="tag">3 · Lago di Braies is gated 09:00–16:00 — arrive before 09:00</span>
+    <p>The 2026 rule is <strong>1 July – 15 September, 09:00–16:00</strong>, and 9 September falls inside it. Arrive inside that window and you need a pre-booked ticket: the <strong><span class="money">€44</span> combination ticket</strong> (its <span class="money">€22</span> voucher only applies if booked a day ahead), or <strong>P3 at <span class="money">€25</span></strong>.</p>
+    <p><strong>Arrive before 09:00 and none of it applies.</strong> Brunico is ~40 minutes away, the lake is empty, and still morning water is what gives you the reflection.</p>
+  </div>
+
+  <div class="callout c-warn">
+    <span class="tag">4 · Seceda's first lift is 08:30, and the morning light is backlit</span>
+    <p>Leave Bolzano at <strong>07:15</strong> and you'll be on the first ascent with nothing wasted.</p>
+    <p>The famous ridge <strong>faces east to ENE</strong> (bearings to the Odle/Fermeda peaks, computed from OSM coordinates: 71°–84°). In the morning the sun is <em>directly behind the peaks</em> — you get silhouettes and dark rock faces. The light only turns frontal and warm from about 15:00.</p>
+    <p><strong>The morning is still the right call.</strong> Provincial weather station data at 2,477 m shows <strong>08:00–11:00 is the sunniest, clearest window (~70% sunshine)</strong>, dropping to 50–57% in the afternoon with roughly double the shower risk, and ~40% of afternoon hours at that altitude spent inside cloud. Morning buys a clear view; afternoon buys good light. A backlit view is still a view — a view inside a cloud is nothing.</p>
+  </div>
+
+  <div class="callout c-danger">
+    <span class="tag">5 · Bolzano ZTL — fines arrive up to a year later</span>
+    <p><strong>Mustergasse is named verbatim inside the ZTL boundary</strong> (Delibera Giunta Comunale n. 518 del 10.10.2022), and the Bolzano ZTL is <strong>active 24 hours a day, every day</strong> with <strong>14 automatic plate-reading gates</strong>. There is no open window. Guests of a property inside the zone are permitted <em>luggage unloading only</em> — never parking — and only if <strong>the property pre-registers your number plate</strong> with the Polizia Municipale. You cannot self-register; the online portal requires an Italian digital ID (SPID/CIE).</p>
+    <p><strong>The trap:</strong> you won't know the plate until you collect the car at VCE. Message Residence Fink from the airport car park before you drive off. Fine is <span class="money">€83–€332</span> <em>per gate crossing</em> — in and out is two fines.</p>
+  </div>
+
+  <div class="callout c-good">
+    <span class="tag">Why there's no car in Venice</span>
+    <p>You need none. The Autorimessa at Piazzale Roma is <span class="money">€35</span> per <em>non-divisible</em> 24-hour block and buys you zero extra metres — Piazzale Roma is where the road ends, and bus line 6 drops you there anyway from 85 m outside your door for <span class="money">€1.50</span>. Three days of parking would have cost more than every bus and boat ticket of the whole trip combined.</p>
+  </div>
+
+  <div class="callout c-good">
+    <span class="tag">Why Brunico for Tuesday and Wednesday</span>
+    <p>It sits right for everything that follows. Braies is ~40 minutes away; Dobbiaco, San Candido, Misurina and Cortina all lie on the same Val Pusteria axis; and Thursday's run out via Cortina to the A27 is a natural line south rather than a doubling-back. The cost is one long transfer on Tuesday evening.</p>
+  </div>
+
+  <div class="callout c-good">
+    <span class="tag">The Venice access fee does not apply</span>
+    <p>The 2026 <em>contributo di accesso</em> ran <strong>3 April – 26 July 2026 only</strong>, and the Comune formally closed the experiment on 27 July. For 11, 12 and 13 September there is <strong>no fee, no QR, no exemption code, nothing to register</strong>. Any site selling you a September Venice access ticket is a scam.</p>
+  </div>
+</div></section>
+
+<hr class="wrap">
+
+<!-- ============ COSTS ============ -->
+<section id="costs"><div class="wrap">
+  <h2><span class="num">02</span>Six people, one 7-seater</h2>
+  <p class="lede">Some charges are per person, others per vehicle. At your group size, knowing which is which changes two decisions and saves real money.</p>
+
+  <div class="callout c-good">
+    <span class="tag">Charged per vehicle — much cheaper per head at five</span>
+    <div class="tw"><table>
+      <thead><tr><th>Item</th><th>Total</th><th>Per head at 5</th></tr></thead>
+      <tbody>
+        <tr><td>Lago di Braies combination ticket</td><td class="n money">€44</td><td class="n money">€8.80</td></tr>
+        <tr><td>— or P3 at Speckstube Eggerhof</td><td class="n money">€25</td><td class="n money">€5.00</td></tr>
+        <tr><td>— or arriving before 09:00, P2 on-site</td><td class="n money">≤€7</td><td class="n money">€1.40</td></tr>
+        <tr><td>Alpe di Siusi P2 Compatsch parking</td><td class="n money">€30</td><td class="n money">€6.00</td></tr>
+        <tr><td><strong>Tre Cime toll road</strong></td><td class="n money">€40</td><td class="n money"><strong>€8.00</strong></td></tr>
+        <tr><td>Bolzano garage, 1 night</td><td class="n money">€20–24</td><td class="n money">~€4.50</td></tr>
+        <tr><td><strong>Venice gondola, 30 min</strong></td><td class="n money">€90</td><td class="n money"><strong>€18.00</strong></td></tr>
+      </tbody>
+    </table></div>
+    <p><strong>The gondola fits you exactly</strong> — the regulated maximum is five passengers per boat, so all five ride together for €90.</p>
+  </div>
+
+  <div class="callout c-warn">
+    <span class="tag">Two things about a 7-seater specifically</span>
+    <p><strong>1. Your motorway tolls may be higher than the figures here.</strong> Italian <strong>Class A</strong> is a 2-axle vehicle measuring <strong>under 1.30 m at the front axle</strong>; taller is <strong>Class B</strong>, which costs meaningfully more. The <span class="money">€20.20</span> VCE→Bolzano figure is Class A, and many 7-seat MPVs sit just over the line. ⚠️ Check the plate inside the driver's door and budget up to ~35% more if you're Class B.</p>
+    <p><strong>2. Parking Walther in Bolzano has a 2.10 m height limit.</strong> Most 7-seat MPVs clear it; a high-roof van does not. Fall back to <strong>Mondschein</strong> (2.40 m) or <strong>Castel Mareccio</strong> (no limit). Braies P4 also refuses vehicles over 2 m online.</p>
+    <p>For tolls and parking you are still a <strong>car</strong>, not a camper — camper rates (Braies €49, Tre Cime €60) apply above 2.20 m.</p>
+  </div>
+
+  <h3>Two decisions this changes</h3>
+
+  <div class="callout c-warn">
+    <span class="tag">Alpe di Siusi — the lift costs €180, the car park costs €30</span>
+    <p>The Seiser Alm Bahn is <span class="money">€30</span> per <em>person</em> — <strong><span class="money">€180</span> for six on Tuesday</strong>. Driving up costs <strong><span class="money">€30</span> for the whole car</strong>, whatever the headcount.</p>
+    <p>You can't drive up between 09:00 and 17:00. But <strong>the ban lifts at 17:00</strong>, and the 2026 parking pages indicate a post-17:00 ascent is possible with a reservation. That version would <strong>save about €150, remove the last-cable-car risk entirely, and hand the photographer the golden hour</strong> to sunset at 19:41 on an empty plateau.</p>
+    <p>🔒 <strong>One call decides it: +39 0471 709600</strong> or <span class="src">info@seiseralm.it</span>. The same pages also state a 09:00 checkpoint deadline, which reads as conflicting — ask directly whether an evening reservation permits a post-17:00 drive up.</p>
+  </div>
+
+  <div class="callout c-good">
+    <span class="tag">Tre Cime di Lavaredo is worth it at this group size</span>
+    <p>The toll is <span class="money">€40</span> per car — <strong>€8 a head</strong> — and Brunico puts you about an hour away. The walk is genuinely easy: <strong>Rifugio Auronzo to Rifugio Lavaredo on trail 101 is completely flat, 20 minutes each way</strong> on a wide gravel track. The classic three-peaks view for 40 minutes of level walking.</p>
+    <p><strong>A workable Wednesday:</strong> Braies 08:00–10:45 → Misurina ~1 h → toll road → Rifugio Auronzo ~12:15 → flat walk and lunch → leave 14:30 → Brunico ~16:00. Drop San Candido.</p>
+    <p>🔒 <strong>Needs a pre-booked slot with your plate</strong> at <span class="src">pass.auronzo.info</span>. The barrier reads the plate, the ticket lasts 12 hours and <strong>dies the moment you exit</strong>. Capacity-limited — book early.</p>
+  </div>
+
+  <div class="callout c-danger">
+    <span class="tag">Group logistics</span>
+    <p><strong>Book every dinner.</strong> A table for five or six is a different proposition, especially in Venice on a Friday or Saturday in September. Standing at a bàcaro works for two; <strong>for five it doesn't</strong>. Split into two groups for the cicchetti crawl, or book a table.</p>
+    <p><strong>Mountain huts take no lunch bookings</strong> — arrive before 12:30 or expect to wait.</p>
+    <p><strong>Basilica tickets are named and non-transferable.</strong> Five names spelled correctly at booking, five photo IDs on the day, one slot.</p>
+    <p><strong>Everyone validates their own ticket, every boarding.</strong> Five people is five chances at a €64.50 fine on the water.</p>
+    <p><strong>Sunday's airport taxi needs a van</strong> for five plus luggage. Book the night before and state the headcount.</p>
+  </div>
+</div></section>
+
+<hr class="wrap">
+
+<!-- ============ ITINERARY ============ -->
+<section id="itinerary"><div class="wrap">
+  <h2><span class="num">03</span>Day by day</h2>
+  <p class="lede">Rewritten against your revised sheet. Times are indicative; amber rows are hard deadlines, red rows are things that will not work.</p>
+
+  <!-- MON -->
+  <article class="day alp">
+    <header>
+      <span class="dnum">Mon 7 Sep</span>
+      <h3>Arrive, drive north, settle into Bolzano</h3>
+      <span class="dmeta">Sunset 19:43 · Bolzano, 1 night</span>
+    </header>
+    <ul class="sched">
+      <li><span class="t">09:00</span><span class="w">Land VCE.</span></li>
+      <li class="lock"><span class="t">09:15–10:15</span><span class="w">Collect the hire car. <strong>All rental desks are on level 3 of the P1 multi-storey</strong>, ~300 m from Arrivals by covered walkway — not in the terminal.<small>🔒 The moment you have the plate, message Residence Fink for ZTL authorisation. Allow 45–75 min from wheels-down; you cannot pre-empt this because you don't know the plate until you're there.</small></span></li>
+      <li><span class="t">10:15</span><span class="w">Depart. Raccordo Marco Polo → A57 → A4 west → A22 north → exit <strong>Bolzano Sud</strong>.<small>~265 km, 2h45–3h00. Take the ticket at the Venezia-Mestre barrier, pay once at Bolzano Sud: <strong class="money">€20.20</strong> Class A, verified on the official calculator. No toll booths in between.</small></span></li>
+      <li><span class="t">~12:00</span><span class="w">Lunch stop on the A22 — Trento or an Autogrill. Beats arriving hungry with nowhere parked.</span></li>
+      <li><span class="t">~14:00</span><span class="w">Arrive Bolzano. Enter Mustergasse <strong>only if the plate is registered</strong>. Unload fast — luggage drop only, never parking.</span></li>
+      <li class="lock"><span class="t">15:00–16:00</span><span class="w">🔒 Check in, Residence Fink. Then move the car to <strong>Parking Walther</strong> (<span class="money">€24</span>/24 h, tunnel access is ZTL-exempt, <strong>2.10 m height limit</strong>) or <strong>BZ Centro</strong> (<span class="money">€20</span>/24 h).</span></li>
+      <li><span class="t">16:30–19:00</span><span class="w"><strong>Bolzano old town on foot.</strong> Piazza delle Erbe market, the Portici arcades, the Duomo, Piazza Walther. All within 400 m of your door.<small>If you still have energy, the <strong>Ötzi museum</strong> is a 6-minute walk. ⚠️ Hours unverified — check on the day.</small></span></li>
+      <li><span class="t">19:30</span><span class="w">Dinner in the old town. Early night — tomorrow starts at 06:15.</span></li>
+    </ul>
+    <footer>
+      <p><strong>Keep the evening in Bolzano.</strong> Arcaded medieval streets, a produce market running since 1295, and the region's best Weinstuben — all within 400 m of the door, and no driving on a day that began with a dawn flight. You'll be in Ortisei tomorrow morning for Seceda anyway.</p>
+      <p><strong>If the flight slips past 11:00:</strong> nothing breaks. You lose an afternoon in town, not a booked asset. Check in late and eat.</p>
+    </footer>
+  </article>
+
+  <!-- TUE -->
+  <article class="day alp">
+    <header>
+      <span class="dnum">Tue 8 Sep</span>
+      <h3>Seceda at first light, Alpe di Siusi by cable car, on to Brunico</h3>
+      <span class="dmeta">The biggest day · sunrise 06:41 · sunset 19:41</span>
+    </header>
+    <ul class="sched">
+      <li><span class="t">06:15</span><span class="w">Wake, check out of Fink, collect the car. Bags in the boot for the day — you sleep in Brunico tonight.</span></li>
+      <li><span class="t">07:15</span><span class="w">Depart Bolzano for Ortisei. A22 to Chiusa/Klausen → SS242D. ~45 min.<small>Not 07:00 — the lift doesn't open until 08:30, and arriving at 08:00 just means waiting in a car park.</small></span></li>
+      <li><span class="t">08:10</span><span class="w">Park <strong>Garage Seceda</strong>, Via Val d'Anna, at the valley station. €2.50/30 min. ~<span class="money">€17</span> for the morning.</span></li>
+      <li class="lock"><span class="t">08:40</span><span class="w">🔒 <strong>Up the mountain.</strong> Ortisei → Furnes → Seceda, top station 2,500 m. First ascent is 08:30, so you're on one of the first cabins.<small>Tickets already booked — <strong>remember it's six, not five</strong>.<br>✅ The lift's closing time is irrelevant under this plan; you're down by midday either way.</small></span></li>
+      <li><span class="t">09:00–11:45</span><span class="w"><strong>Shoot the ridge line</strong> to the summit cross at 2,519 m. ~1 km, essentially flat, broad gravel. The tourism board's wording: "comfortably completed in around one hour at a leisurely pace, including stops".<small>A €5 turnstile now gates the continuation toward Panascharte — skip it. The official page says so itself: the famous view is already on the free stretch.<br><strong>Dress for 9 °C and wind</strong>, not for the valley. At 2,500 m in early September the daytime high is around 9 °C and roughly 1 morning in 4 sees a sub-zero dawn.</small></span></li>
+      <li><span class="t">11:45–12:15</span><span class="w">Coffee at a hut, then descend.<small>This matches the photographer's own outline — shoot until 11:00–12:00, then move to Alpe di Siusi for the afternoon.</small></span></li>
+      <li><span class="t">12:30</span><span class="w">Drive <strong>Ortisei → Seis/Siusi</strong>. ~30 min over the Panider Sattel.</span></li>
+      <li><span class="t">13:00–13:45</span><span class="w">Lunch in <strong>Seis am Schlern</strong> or <strong>Kastelruth</strong> — proper villages, proper food, parked for free. <strong>Book a table for six.</strong></span></li>
+      <li class="stop"><span class="t">🚫</span><span class="w"><strong>Do not try to drive up to Compatsch.</strong> The road is closed to uphill private traffic <strong>09:00–17:00</strong>, enforced by camera at St. Valentin. There is no afternoon ticket. You will be turned back.</span></li>
+      <li><span class="t">13:50</span><span class="w">Park <strong>free</strong> at the Seiser Alm Bahn valley station, Schlernstraße 39 (closed 22:00–06:30).</span></li>
+      <li class="lock"><span class="t">14:00</span><span class="w">🔒 <strong>Seiser Alm Bahn up to Compatsch.</strong> ~15 min. <span class="money">€21</span> single / <span class="money">€30</span> return each — <strong><span class="money">€150</span> for five, or €180 with the photographer.</strong><small>The official access page is explicit: <em>"Those using the cable car from Seis bypass these restrictions entirely."</em> No booking, no single-entry trap.<br>💡 <strong>€180 for six.</strong> Driving up costs €30 for the whole car — but only outside 09:00–17:00. See the golden-hour note below.</small></span></li>
+      <li><span class="t">14:15–17:45</span><span class="w"><strong>Alpe di Siusi.</strong> Europe's largest high-altitude alpine meadow, the Sassolungo on one side and the Sciliar on the other. Move around on foot or by <strong>Almbus line 11</strong> (Compatsch–Ritsch–Saltria, <span class="money">€4</span> single / <span class="money">€7</span> return, ~every 20 min).<small>⚠️ From 7 Sep the late extra Almbus runs are withdrawn — last Compatsch→Saltria 18:40, last Saltria→Compatsch 18:55. Almbus is <em>not</em> covered by the Südtirol Guest Pass.<br>Light improves all afternoon here as the sun swings west across the meadows. This is the good half of the day photographically.</small></span></li>
+      <li class="lock"><span class="t">17:45</span><span class="w">🔒 <strong>Last cable car down — verify this number.</strong> The 2026 printed brochure says the last run is <strong>18:00</strong>; the website says 19:00. Until you've confirmed by email, <strong>plan for 18:00</strong>.</span></li>
+      <li><span class="t">18:15</span><span class="w">Drive <strong>Seis → Brunico</strong>. A22 north → Bressanone → SS49 Val Pusteria. ~1h30.<small>Drop the photographer at <strong>Chiusa station</strong> on the way — it's directly on this route. Check his last train before you set off.</small></span></li>
+      <li class="lock"><span class="t">~19:45–20:00</span><span class="w">🔒 Arrive Brunico. Check in at <strong>Hölzlhof, Walchhorn 7/a</strong> — <strong>before 22:00</strong>.<small>✅ <strong>No ZTL risk here.</strong> Hölzlhof is a farm at the foot of Kronplatz, ~3.4 km from the historic centre and 1.4 km from the Kronplatz lifts. You reach it on ordinary open roads and park on the property. Brunico's old town is a <em>pedestrian zone</em> (the whole Stadtgasse) rather than a Bolzano-style camera ZTL — and the one camera-enforced ZTL in town is on Via Europa, well east of you.</small></span></li>
+      <li><span class="t">20:30</span><span class="w">Dinner in Brunico.</span></li>
+    </ul>
+    <footer>
+      <div class="callout c-good" style="margin:0 0 14px">
+        <span class="tag">If the photoshoot is the point of this day — the golden-hour version</span>
+        <p>The uphill ban lifts at <strong>17:00</strong>. Official 2026 parking pages indicate you may drive up after 17:00 <em>with a reservation</em> (P2 Compatsch, <span class="money">€30</span>, bookable exactly six days ahead — <strong>Wed 2 September</strong>). If that holds, you could skip the cable car, drive up at 17:15 and shoot <strong>17:30 until sunset at 19:41</strong>, with the whole golden hour on an empty plateau — then drive down, which is unrestricted at any hour.</p>
+        <p>That removes the last-cable-car risk completely and gives you by far the best light of the trip. <strong>At six people it also saves about €150</strong> — the parking is €30 per <em>car</em>, against €30 per <em>person</em> for the lift. The cost is a late arrival in Brunico (~21:30, still inside the 22:00 check-in) and a rushed dinner.</p>
+        <p><strong>⚠️ One phone call decides it.</strong> The official pages also state the checkpoint must be passed by 09:00 and the barrier by 09:30 — which reads as conflicting with evening access. Ring <strong>+39 0471 709600</strong> or email <span class="src">info@seiseralm.it</span> and ask directly whether an evening P2 reservation permits a post-17:00 ascent. If yes, take it.</p>
+      </div>
+      <p><strong>Two messages to send before the trip:</strong> <span class="src">info@seiseralmbahn.it</span> for the last cable car on 8 Sep, and <strong>+39 0471 796 531</strong> for Seceda's first ascent and last descent. Both are 2-minute jobs that protect the day.</p>
+      <p><strong>The shoot window drives everything above</strong> — settle the final timings with Chị and the photographer before the day.</p>
+    </footer>
+  </article>
+
+  <!-- WED -->
+  <article class="day alp">
+    <header>
+      <span class="dnum">Wed 9 Sep</span>
+      <h3>Braies before the barrier, then San Candido at leisure</h3>
+      <span class="dmeta">Brunico base · the day I've restructured most</span>
+    </header>
+    <ul class="sched">
+      <li><span class="t">07:00</span><span class="w">Coffee, collect the car. <strong>Take breakfast with you</strong> — nothing at Braies opens before 09:00, not even the kiosk.</span></li>
+      <li class="lock"><span class="t">07:15</span><span class="w">🔒 Depart Brunico. SS49 Val Pusteria → Monguelfo → road 47. <strong>~40 min</strong> — the single best thing about basing here.</span></li>
+      <li class="lock"><span class="t">before 09:00</span><span class="w">🔒 <strong>Enter the Braies valley.</strong> Before 09:00 there is no permit, no booking and no <span class="money">€44</span> ticket — you just pay for parking on arrival.<small>2026 rule: <strong>1 Jul – 15 Sep, 09:00–16:00</strong>. Wider and earlier than 2025 (10 Jul–10 Sep, 09:30) — planning off last year's information gets this wrong.<br>You pay on-site at the barrier: <strong>P2 max <span class="money">€7</span>, P3 max <span class="money">€12</span>, P4 max <span class="money">€30</span>/24 h</strong>.<br>💡 <strong>All Braies charges are per vehicle</strong> — at five, even the €44 ticket is €8.80 each. The early start is about crowds and light, not cost.<br>⚠️ <strong>Arriving early does not guarantee a space</strong> — the tourism board's own words are that without a reservation "all parking spaces may already be occupied or reserved". Weekday September should be comfortable, but this is the one weakness of the early plan.</small></span></li>
+      <li><span class="t">08:00–09:30</span><span class="w"><strong>The lake, effectively to yourselves.</strong> Walk the <strong>west shore out and back</strong> — a broad gravel track, trail 19, officially pushchair-grade.<small>⚠️ <strong>Don't assume the full loop is flat.</strong> The official figures are <strong>3.6 km, ~59 min, 86 m of ascent</strong>, and the tourism board notes "part of the circuit is practicable through a stair path". The west shore alone is level, and it's the postcard.<br>Still morning water is what gives you the reflection. Official guidance is explicit: come <strong>before 09:00 or after 16:00</strong> to avoid peak hours.</small></span></li>
+      <li><span class="t">09:30–10:30</span><span class="w">Coffee and cake at <strong>Emma's Bistro</strong> (bar opens 09:00, in a restored horse stable with a terrace) or at <strong>Grünwaldalm</strong> beyond the far end of the lake — open 09:00–18:00, warm kitchen from 10:00.<small><strong>Boat hire</strong> from the Palafitta boathouse: first boat 09:00, last 17:30 on your date. <span class="money">€15</span> pp shared, <span class="money">€50</span> private. No food, drink or toilet at the boathouse itself.<br>The hotel takes Visa and Mastercard but <strong>not Amex</strong>. Carry cash for the hut.</small></span></li>
+      <li><span class="t">10:45</span><span class="w">Drive out. Exiting is unrestricted at any hour.</span></li>
+      <li><span class="t">11:30–13:00</span><span class="w"><strong>Lago di Dobbiaco</strong> — the nature-and-education trail round the lake is <strong>2.5 km with 11 stations and is officially pram-accessible</strong>. Genuinely flat, unlike Braies' full loop. Then lunch in <strong>Dobbiaco/Toblach</strong>, ~5 min away.<small>Paid parking directly at the lake ⚠️ (tariff not published). Bus 445 also stops at the lake car park.</small></span></li>
+      <li><span class="t">13:30–15:00</span><span class="w"><strong>San Candido / Innichen.</strong> Budget <strong>1–1.5 hours</strong>, not a whole afternoon — it's church plus a loop of the pedestrian old town. The <strong>Collegiate Church</strong> (c. 1143, Piazza del Magistrato 1) is described by the tourism board as "one of the most beautiful sacral buildings in Roman style in the Eastern Alps" — monumental Romanesque fresco, crucifixion group, crypt. Then the pedestrian old town and Via dei Tintori.<small><strong>Park in the west car park — it's large and free.</strong> The east lot gives 3 hours free then charges.<br>⚠️ Church opening hours and any entry fee not published. DoloMythos and MIK museums are also here if it rains.</small></span></li>
+      <li><span class="t">15:15–17:00</span><span class="w"><strong>Spare time — spend it on one of these.</strong> <strong>Val Fiscalina</strong> is ~30 min away and gives you the flat 20–30 min valley walk to the Talschlusshütte. Or drop back to Brunico for <strong>MMM Ripa</strong>, which closes at 18:00 and is <em>shut on Tuesdays</em>, making today your only chance at it.</span></li>
+      <li><span class="t">17:30</span><span class="w">Back to Brunico.</span></li>
+      <li><span class="t">19:00</span><span class="w">Dinner in Brunico, on foot.</span></li>
+    </ul>
+    <footer>
+      <div class="callout c-good" style="margin:0 0 14px">
+        <span class="tag">If you'd rather not start at 07:00 — there's a cheaper way than the €44</span>
+        <p><strong>P3, at Speckstube Eggerhof, is <span class="money">€25</span> per car, includes the transit permit, and states "arrival possible at any time of day".</strong> It's 400 m from the lake. That beats the €44 combination ticket outright unless you'll actually spend the €22 voucher on food.</p>
+        <p>Book at <span class="src">parking.speckstube-eggerhof.it</span>. Note you <strong>cannot</strong> buy a parking-only reservation at the public lots — P1, P2 and P5 sell the €44 combination ticket and nothing else. P4, lakeside at 100 m, is ~<span class="money">€40</span> with a €16 voucher ⚠️ (that page still shows 2025 dates).</p>
+        <p>Whichever you pick, <strong>book ahead, not same-day</strong> — the €22 rebate inside the €44 ticket is only given on advance booking. Payment is <strong>card/online only, no cash</strong>, and you can rebook up to 3 days ahead.</p>
+      </div>
+      <p><strong>Strong alternative for the afternoon:</strong> <strong>Kronplatz</strong> — lift from Riscone, 10 minutes from your door, running 09:00–17:00. <strong>LUMEN + MMM Corones on a €22 combined ticket</strong>, both 10:00–16:00. Near-zero walking for a 2,275 m panorama and two genuinely good museums. If the weather is clear this may beat San Candido.</p>
+      <p><strong>If you take Val Fiscalina:</strong> two things aren't published anywhere official — the <strong>Fischleinboden parking tariff</strong> (figures of €8–15/day circulate unconfirmed) and whether any <strong>time-of-day driving restriction</strong> applies into the valley. The Comune's 2025 parking page has gone offline. Ring the car park <strong>+39 0474 710044</strong> or Sexten tourist office <strong>+39 0474 710310</strong>. Buses <strong>440 and 446</strong> together give a ~15-minute headway to Fischleintalboden and run 14 Jun – 11 Oct — <strong>cash only on board</strong>, as guest-card validity is contradictory between official sources.</p>
+      <p><strong>Bad-weather fallback:</strong> <strong>MMM Ripa</strong> in Brunico Castle — 10:00–18:00, last admission 17:00, <span class="money">€14</span>. <strong>⚠️ It closes on Tuesdays</strong>, so Wednesday is your only shot at it. Add the Stadtgasse and the medieval gates. No driving, nothing booked, nothing at risk.</p>
+    </footer>
+  </article>
+
+  <!-- THU -->
+  <article class="day alp">
+    <header>
+      <span class="dnum">Thu 10 Sep</span>
+      <h3>Out through Misurina and Cortina, drop the car, into Venice</h3>
+      <span class="dmeta">Car back 18:00 · check-in 19:00 · the tightest day</span>
+    </header>
+    <ul class="sched">
+      <li><span class="t">08:00–09:00</span><span class="w">Breakfast, pack, check out of Hölzlhof.</span></li>
+      <li><span class="t">09:00</span><span class="w">Depart Brunico. SS49 east → <strong>Dobbiaco/Toblach</strong>, then SS51 south through the Landro valley.</span></li>
+      <li><span class="t">10:15–11:15</span><span class="w"><strong>Lago di Misurina.</strong> 1,754 m, ringed by the Sorapiss and the Cadini. <strong>No fee and no booking to visit the lake</strong>; the circuit is flat, well-surfaced and takes 30–40 minutes. Budget 60–75 min all in. Your 10:00–11:00 slot is right.<small>⚠️ Parking is paid at several small lots, reportedly ~€2/h — secondary sourcing only, the Consorzio publishes nothing.</small><small>You are ~20 minutes from the Tre Cime toll road here. <strong>Don't.</strong> It's <span class="money">€40</span> per car, needs a pre-booked slot at pass.auronzo.info, and the payoff is a 20-minute flat walk you don't have time for today.</small></span></li>
+      <li><span class="t">11:45</span><span class="w">Drive Misurina → <strong>Cortina d'Ampezzo</strong>. ~40 min.</span></li>
+      <li><span class="t">12:30–14:00</span><span class="w"><strong>Cortina.</strong> Lunch and a walk down the Corso Italia. It's a resort rather than an old town — pretty setting, serious shopping, and worth exactly the ninety minutes you've given it.<small>⚠️ Check for post-Olympic works — the Milano-Cortina Games ran here in February 2026 and the road layout may still be disrupted. Being verified.</small></span></li>
+      <li class="lock"><span class="t">14:00</span><span class="w">🔒 <strong>Depart Cortina.</strong> SS51 di Alemagna → Pian di Vedoia → <strong>A27</strong> → SR11. <strong>≈160 km, ≈2h30</strong> — Cortina's own tourism board's figure. A27 toll ≈<span class="money">€8.60</span>.<small>This is why Brunico works: you exit the mountains southward instead of doubling back through Bolzano.<br>⚠️ <strong>Check ANAS notices the week before.</strong> The Milano-Cortina Games ran here in February 2026 and post-event works on the SS51 are a real unverified risk on a single-carriageway mountain road.</small></span></li>
+      <li class="lock"><span class="t">17:00–17:30</span><span class="w">🔒 Arrive VCE. <strong>Refuel before you reach the airport</strong> — airport-adjacent fuel is dear and a "not returned full" charge is dearer.</span></li>
+      <li class="lock"><span class="t">18:00</span><span class="w">🔒 <strong>Return the car.</strong> Follow "Rent a car / P1 – top floor", take a ticket at the P1 entrance, drive to level 3.<small>⚠️ Confirm your desk is staffed at 18:00 and photograph the car at handover — fuel gauge, mileage, all four corners. This is your only protection against later charges.</small></span></li>
+      <li><span class="t">18:15–19:15</span><span class="w"><strong>VCE → Marghera.</strong> Two legs, ~50–60 min:<small><strong>1. Aerobus line 5</strong>, VCE → Venezia Piazzale Roma, <strong>24 min, every 15 min</strong>.<br><strong>2. Line 6</strong>, Piazzale Roma → <strong>"Trieste Eraclea"</strong> — <strong>250 m from Via Grado</strong> — 12 min, every 20 min. The same line you'll use all weekend.<br>🎟️ <strong>Buy the <span class="money">€10</span> Aerobus 75-minute ticket.</strong> It covers lines 5/15/45 <em>and</em> the interchange onto the mainland network, so one ticket does the whole journey. ⚠️ <strong>The plain €1.50 ticket is not valid to or from the airport</strong> — this catches people out.<br><strong>Or take a taxi.</strong> The fixed airport→Mestre fare is ~<span class="money">€35</span> ⚠️. With luggage, at dusk, after three hours of driving, against a 19:00 check-in, that buys back the whole margin.</small></span></li>
+      <li class="lock"><span class="t">19:00</span><span class="w">🔒 Check in, Grado 3, Marghera.</span></li>
+      <li><span class="t">20:00</span><span class="w">Dinner locally in Marghera — mainland prices, no boat needed. Save Venice for tomorrow.</span></li>
+    </ul>
+    <footer>
+      <div class="callout c-danger" style="margin:0 0 14px">
+        <span class="tag">Tighter than it looks, but it does work</span>
+        <p>Good news: the official Cortina→VCE figure is <strong>2h30</strong>, so a 14:00 departure puts you at the airport around <strong>16:45</strong> — roughly <strong>an hour of slack</strong> before the 18:00 return. That's a real buffer, not a theoretical one.</p>
+        <p>The pinch is the <em>other</em> end: once the keys are gone you still need 60–75 minutes to reach Grado 3 by public transport, against a 19:00 check-in. <strong>The buffer sits before the car return, not after it</strong> — so returning the car early doesn't help unless you also plan the transfer. A pre-booked taxi is the clean fix.</p>
+        <p><strong>If you fall behind, sacrifice Cortina, not the drive.</strong> Misurina is the better stop and it comes first.</p>
+      </div>
+      <p><strong>Return at VCE, not a Mestre depot.</strong> It's your pickup location, so no one-way surcharge — and the Mestre downtown offices genuinely won't work: Avis and Europcar there close at 18:30, Hertz at 17:30, and <strong>all are shut on Sunday</strong>. An 18:00 Mestre drop is borderline at best. ⚠️ Confirm your own supplier's airport desk hours and whether there's an after-hours key drop at P1 level 3.</p>
+      <p><strong>Refuel before the airport</strong> and photograph the car at handover — fuel gauge, mileage, all four corners. That's your only protection against charges appearing weeks later.</p>
+    </footer>
+  </article>
+
+  <!-- FRI -->
+  <article class="day lag">
+    <header>
+      <span class="dnum">Fri 11 Sep</span>
+      <h3>Venice · the historic centre, finishing after dark</h3>
+      <span class="dmeta">Sunset 19:32</span>
+    </header>
+    <ul class="sched">
+      <li><span class="t">08:00</span><span class="w">Line 6 from Trieste Eraclea → Piazzale Roma, 17 min, <span class="money">€1.50</span> each. <strong>Validate on boarding.</strong><small>Buy a <strong>carnet of 10 land tickets for <span class="money">€14</span></strong> on arrival — you'll make at least 8 bus trips across three days, and it saves the daily faff.</small></span></li>
+      <li><span class="t">08:30–09:20</span><span class="w">Walk in via Rialto while the city is still quiet — the day-tripper wave lands 10:00–16:00.</span></li>
+      <li class="lock"><span class="t">09:30</span><span class="w">🔒 <strong>St Mark's Basilica</strong>, earliest booked slot. <span class="money">€10</span> basic.<small>Tickets are <strong>named and non-transferable</strong> — bring photo ID. No trolleys at all; bags over 40×30×20 cm refused. Shoulders covered, men bare-headed. Max 20 min inside.<br><strong>Best value in Venice:</strong> any Basilica ticket also admits you to ~35 other churches within 6 months — Frari's neighbours, Santa Maria dei Miracoli, Madonna dell'Orto, Torcello's basilica.</small></span></li>
+      <li><span class="t">10:30</span><span class="w">Campanile (<span class="money">€15</span>) only if the queue is short. The view famously omits the one building you want in it.</span></li>
+      <li><span class="t">11:30–13:00</span><span class="w">Walk to San Polo. Lunch at a bàcaro — <strong>standing at the bar, or at a table. Never sitting on steps</strong> (€100–200 fine plus a removal order).</span></li>
+      <li><span class="t">13:00–14:30</span><span class="w"><strong>Basilica dei Frari</strong> — Titian's <em>Assunta</em>. Open to 19:30 on Fridays. ~<span class="money">€9.50</span>.</span></li>
+      <li><span class="t">14:45–16:30</span><span class="w"><strong>Scuola Grande di San Rocco</strong>, <span class="money">€12</span>, no booking possible or needed, ticket office closes 17:00. Tintoretto's complete cycle and almost never crowded — the most under-visited great interior in Venice.</span></li>
+      <li><span class="t">16:30–18:30</span><span class="w">Dorsoduro. Cross by <strong>traghetto</strong> — a real gondola across the Grand Canal for <span class="money">€2</span>. Aperitivo on the Zattere.</span></li>
+      <li><span class="t">19:00–20:30</span><span class="w">Dinner off the tourist spine — Castello or Dorsoduro.</span></li>
+      <li class="lock"><span class="t">20:30–23:00</span><span class="w">🔒 <strong>Doge's Palace late opening — last entry 22:00.</strong> Open to 23:00 every Friday and Saturday to 26 Sep.<small>This is the best single lever of the whole trip: the state rooms near-empty at 21:00, then walking out into a floodlit, quiet Piazza San Marco. Costs nothing extra.</small></span></li>
+      <li><span class="t">23:20</span><span class="w">To Piazzale Roma, line 6 back. Last bus 00:40.</span></li>
+    </ul>
+    <footer>
+      <div class="callout c-warn" style="margin:0 0 14px">
+        <span class="tag">One centre day, one island day</span>
+        <p>Murano and Burano together are <strong>comfortably one day</strong>, and most of it is spent on boats: Piazzale Roma → Murano is 21 minutes, Murano → Burano 32, Burano → Fondamente Nove 41. Two island days would mean idle time, or adding Torcello — a request-only stop on line 12 and a common way to get stranded.</p>
+        <p>Doing the centre first also pays practically: a San Marco ticket admits you to <strong>Torcello's basilica</strong> for six months, so Friday's ticket covers Saturday.</p>
+      </div>
+      <p><strong>Ticket note:</strong> there is no Doge's-Palace-only ticket. The <strong>I Musei di Piazza San Marco</strong> combined ticket (Palazzo Ducale + Correr + Archaeological + Marciana) is <span class="money">€35</span>, or <span class="money">€30</span> if booked 30+ days ahead. <strong>Secret Itineraries</strong> at <span class="money">€40</span> includes full admission to all four — only €5 more for a guided 75-minute tour of the chambers and prisons. Booking mandatory.</p></footer>
+  </article>
+
+  <!-- SAT -->
+  <article class="day lag">
+    <header>
+      <span class="dnum">Sat 12 Sep</span>
+      <h3>Venice · Murano, Burano and the lagoon</h3>
+      <span class="dmeta">Film Festival closing day — avoid the Lido</span>
+    </header>
+    <ul class="sched">
+      <li><span class="t">08:15</span><span class="w">Line 6 → Piazzale Roma.</span></li>
+      <li class="lock"><span class="t">08:51 / 09:11</span><span class="w">🔒 <strong>Line 3, Piazzale Roma → Murano Colonna, 21 min.</strong> Every 20 min from 09:11. This is the fastest Murano route from the mainland side — exactly your situation.<small>Last departure from P.le Roma is 18:21; it's a daytime-only line.</small></span></li>
+      <li><span class="t">09:35–11:15</span><span class="w">Murano on foot: Fondamenta dei Vetrai, Santa Maria e Donato.<small>🚫 <strong>Ignore anyone offering a "free launch to a glass demonstration"</strong> — those are high-pressure sales funnels, frequently selling imported glass.</small></span></li>
+      <li><span class="t">11:20</span><span class="w">Line 12, Murano Faro → Burano, ~32 min.</span></li>
+      <li><span class="t">12:00–15:30</span><span class="w">Burano: lunch, the coloured houses, the leaning campanile. Mazzorbo is a footbridge away and is served by every run.</span></li>
+      <li><span class="t">—</span><span class="w"><strong>Torcello — go via line 9 from Burano, not line 12.</strong> The short shuttle runs <strong>every 15 min, 09:30–17:45, a 5-minute crossing</strong>.<small>🚫 <strong>Line 12 skips Torcello all midday</strong> — it only calls before ~09:18 and after 18:18, and then only as a request stop (call 800 845 065 twenty minutes ahead). This is how people strand themselves. Use line 9.<br>✅ Torcello's basilica is <strong>free with the San Marco ticket you bought on Friday</strong> — it's valid six months, which is exactly why the centre day comes first.</small></span></li>
+      <li><span class="t">15:52 / 16:12</span><span class="w">Line 12, Burano → Fondamente Nove, 41 min. Last sensible return 18:12.</span></li>
+      <li><span class="t">16:50–18:00</span><span class="w">Cannaregio walk. Then pick <em>one</em>: <strong>Gallerie dell'Accademia</strong> (to 19:00, sales stop 18:00, <span class="money">€20</span>) or <strong>Peggy Guggenheim</strong> (to 18:00, last entry 17:00, <span class="money">€17</span>).</span></li>
+      <li><span class="t">18:30</span><span class="w">Gondola, if you want one. The Comune's regulated tariff is <strong><span class="money">€90</span> per gondola for 30 minutes, 09:00–19:00</strong>, up to 5 passengers — <em>not</em> per person. After 19:00 it's €110 for 35 min.<small>✅ <strong>Five is exactly one gondola's capacity</strong> — the regulated maximum is 5 passengers. So the whole party rides together for <span class="money">€90</span>, about <strong>€18 each</strong>. This is one of the few things that gets cheaper per head at your group size.<br>Book at an official <em>stazio</em>, state the Comune tariff, agree price and duration, and note the start time. Serenades are unregulated and charged on top.</small></span></li>
+      <li><span class="t">19:30</span><span class="w">Dinner.</span></li>
+      <li><span class="t">21:30</span><span class="w">Line 6 back to Marghera.</span></li>
+    </ul>
+    <footer><p><strong>Buy a 24-hour Venezia Daily Pass (<span class="money">€25</span>) for this day</strong> — you'll make at least four boat rides and single tickets are €9.50 each. <strong>Validate on every single boarding</strong>, including with a pass; this is the number-one way tourists get fined (€64.50 minimum on the water).</p>
+    <p>The Film Festival crowd concentrates on the Lido, not San Marco, so the historic centre is less affected than you'd fear. Your routes (3, 4.1, 12) are largely unaffected — but avoid the Lido and expect press traffic at San Zaccaria.</p></footer>
+  </article>
+
+  <!-- SUN -->
+  <article class="day lag">
+    <header>
+      <span class="dnum">Sun 13 Sep</span>
+      <h3>Departure</h3>
+      <span class="dmeta">Check-out 10:00 · flight ~10:00–11:00 · no car</span>
+    </header>
+    <ul class="sched">
+      <li><span class="t">06:15</span><span class="w">Pack. Online check-in done the night before, boarding passes on your phones.</span></li>
+      <li class="lock"><span class="t">06:40</span><span class="w">🔒 <strong>Leave Marghera.</strong> Line <strong>6</strong> from Trieste Eraclea ~06:43 → Piazzale Roma ~07:00, then <strong>Aerobus 5</strong> 07:20 → VCE 07:41.<small>Alternative: tram <strong>T2</strong> from Piazza Mercato 07:01 → Mestre FS 07:07, then <strong>ACTV 15</strong> 07:25 → VCE 07:49. The <strong>ATVO 35b</strong> from Mestre FS runs from 04:20 daily if you need earlier.<br>🚨 <strong>These are Sunday 6 Sep times, not 13 Sep.</strong> ACTV has not yet published its autumn schedule — the timetable service returns an error for 10–13 September. <strong>Re-check in late August.</strong><br><strong>Or pre-book a taxi</strong> (~€35–50) and delete the problem. On the one morning where being wrong means missing a flight, this is money well spent.</small></span></li>
+      <li><span class="t">08:00</span><span class="w">At VCE. Bag drop, security.</span></li>
+      <li><span class="t">~10:00–11:00</span><span class="w">VCE → HEL.</span></li>
+    </ul>
+    <footer><div class="callout c-danger" style="margin:0">
+      <span class="tag">The sharpest timing risk on the trip</span>
+      <p>Check-out is <strong>10:00</strong> and the flight is around <strong>10:00–11:00</strong>. Those don't fit together. For a 10:00 departure you need to be airside by <strong>08:00</strong>, so leaving Marghera around <strong>06:40</strong> — well before check-out, with luggage, on a Sunday, and with no car.</p>
+      <p><strong>Two things to settle:</strong> confirm the exact flight time, and ask the Grado 3 host about an early check-out or leaving bags. Then <strong>pre-book a van taxi the night before</strong> — €35–50 removes the whole problem on the one morning where being wrong means missing a flight.</p>
+    </div></footer>
+  </article>
+</div></section>
+
+<hr class="wrap">
+
+<!-- ============ BOOKING ============ -->
+<section id="booking"><div class="wrap">
+  <h2><span class="num">04</span>Book by when</h2>
+  <p class="lede">In order of how much damage getting it wrong would do.</p>
+
+  <div class="callout c-danger">
+    <span class="tag">Four messages worth more than anything else on this page</span>
+    <p><strong>1.</strong> <span class="src">info@seiseralmbahn.it</span> — what is the <strong>last cable car down from Compatsch on Tue 8 Sep</strong>? The 2026 brochure says 18:00, the website says 19:00. Your whole Tuesday evening depends on the answer.</p>
+    <p><strong>2.</strong> <strong>+39 0471 709600</strong> / <span class="src">info@seiseralm.it</span> — <strong>can we drive up to P2 Compatsch after 17:00 with an evening parking reservation?</strong> If yes, you unlock golden hour on the plateau and remove the cable-car risk entirely.</p>
+    <p><strong>3.</strong> <strong>+39 0471 796 531</strong> (Seceda) — confirm <strong>first ascent 08:30 and last descent</strong> on Tue 8 Sep.</p>
+    <p><strong>4.</strong> <strong>Residence Fink</strong> — confirm they can register your plate for ZTL luggage unloading at Mustergasse 9, and how much notice they need. You won't have the plate until you're standing at VCE.</p>
+  </div>
+
+  <div class="tw"><table>
+    <thead><tr><th>Deadline</th><th>Action</th></tr></thead>
+    <tbody>
+      <tr><td class="n"><strong>Now</strong></td><td>The four messages above.</td></tr>
+      <tr><td class="n"><strong>Now</strong></td><td>Confirm the <strong>photographer's train to Chiusa</strong>, a precise pickup point, and his last train back that evening.</td></tr>
+      <tr><td class="n"><strong>Now</strong></td><td>Confirm the <strong>exact Sunday flight time</strong>, then ask the Grado 3 host about early check-out or bag storage. Currently check-out and departure overlap.</td></tr>
+      <tr><td class="n"><strong>Now</strong></td><td>Check <strong>Hölzlhof</strong> (Brunico) for a ZTL/parking situation and confirm the before-22:00 check-in is firm — Tuesday could run late.</td></tr>
+      <tr><td class="n">ASAP</td><td><strong>St Mark's Basilica</strong> timed slot — <span class="src">tickets.basilicasanmarco.it</span>. Named tickets; bring photo ID.</td></tr>
+      <tr><td class="n">ASAP</td><td><strong>Musei di Piazza San Marco</strong> — the 30-days-ahead €30 window has passed, so it's €35, or <strong>€40 for Secret Itineraries</strong> which includes all four museums. Take the €40.</td></tr>
+      <tr><td class="n">Before Thu 10</td><td>Confirm your <strong>rental desk is staffed at 18:00</strong>, and ask whether an off-airport Mestre return is possible and what it costs.</td></tr>
+      <tr><td class="n">Tue 8 Sep</td><td><em>Only</em> if you keep the afternoon Braies plan: book the <strong>€44 combination ticket a day ahead</strong> so the €22 voucher applies. If you go before 09:00 as recommended, <strong>skip this entirely</strong>.</td></tr>
+      <tr><td class="n">Sat 12 Sep</td><td>Pre-book a <strong>taxi</strong> for Sunday morning if the bus timings look marginal.</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="callout c-good">
+    <span class="tag">Nothing to book for Alpe di Siusi</span>
+    <p>Reaching the plateau by cable car means the <strong>P2 Compatsch parking reservation doesn't apply</strong> — unless you take the post-17:00 drive-up option. That avoids the trip's nastiest booking: date-locked to exactly six days ahead, non-refundable, non-editable and single-entry.</p>
+  </div>
+</div></section>
+
+<hr class="wrap">
+
+<!-- ============ DRIVING ============ -->
+<section id="driving"><div class="wrap">
+  <h2><span class="num">05</span>Driving, tolls and parking</h2>
+
+  <h3>Tolls — verified on the official calculators</h3>
+  <div class="tw"><table>
+    <thead><tr><th>Leg</th><th>Class A toll</th><th>How it's paid</th></tr></thead>
+    <tbody>
+      <tr><td>Venezia-Mestre → Bolzano Sud</td><td class="n money">€20.20</td><td>Ticket at the Venezia-Mestre barrier (A57 km 9.3), pay once at Bolzano Sud. The A4/A22 link at Verona is a free interchange — you never use the Verona Nord booth.</td></tr>
+      <tr><td>Bolzano Sud → Venezia-Mestre</td><td class="n money">€20.20</td><td>Same in reverse. Marghera exit is 1.5 km <em>past</em> the barrier, so you pay first, then exit.</td></tr>
+    </tbody>
+  </table></div>
+  <p class="src">Sources: autobrennero.it toll calculator (returns "Verona Nord → Bolzano Sud, Classe A euro: 10,30" verbatim); CAV toll calculator; cross-checked against the A22 2026 unit-rate PDF (€0.07592/km mountain, €0.06412/km flatland, +1.46% from 1 Jan 2026).</p>
+
+  <h3>Bolzano parking</h3>
+  <div class="tw"><table>
+    <thead><tr><th>Garage</th><th>Tariff</th><th>Height</th><th>Note</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Parking Walther</strong> ⭐</td><td class="n">€24 / 24 h · €1/h 20:00–06:00</td><td class="n">2.10 m</td><td>Closest (~350 m). <strong>Tunnel access is ZTL-exempt.</strong> 4 nights ≈ €96.</td></tr>
+      <tr><td>BZ Centro (SEAB)</td><td class="n">€20 / 24 h</td><td class="n">2.00 m</td><td>1,265 spaces, slightly further. ≈ €80 for the stay.</td></tr>
+      <tr><td>Laurin</td><td class="n">€27 / 24 h</td><td class="n">2.30 m</td><td>Fallback if the car is tall.</td></tr>
+      <tr><td>Luna / Mondschein</td><td class="n">€2.80/h day</td><td class="n">2.40 m</td><td>Tall-vehicle option.</td></tr>
+      <tr><td>Castel Mareccio</td><td class="n">€2.20/h workdays</td><td class="n">no limit</td><td>The one that fits anything.</td></tr>
+    </tbody>
+  </table></div>
+  <div class="callout c-warn"><span class="tag">Two traps</span>
+    <p><strong>Check your hire car's height against 2.10 m</strong> — an SUV with roof bars won't fit in Walther. And <strong>do not park on white-lined street bays</strong> in the centro zone: residents only, Mon–Fri 08:00–21:00 and Sat 08:00–13:00. The tourism board's parking PDF quotes stale, lower prices — trust the operator sites.</p></div>
+
+  <h3>Roadworks on your route, September 2026</h3>
+  <ul class="tight">
+    <li><strong>A22:</strong> a carriageway deviation runs 14 Jul – 2 Oct 2026 between Brennero and Vipiteno (km 8.8–12.0) — that is <em>north</em> of Bolzano and does not affect you. No works listed on Verona Nord ↔ Bolzano Sud.</li>
+    <li><strong>A4 Verona Est</strong> (km 289.7–290.3): narrowed lanes for the high-speed-rail works. This one <em>is</em> on your route, both directions. No specific September dates published.</li>
+    <li>Expect the classic <strong>southbound A22 holiday-return queues</strong> in the Adige valley. Your outbound Monday is the light direction.</li>
+    <li>Winter tyres are not applicable — the obligation runs 15 Nov – 15 Apr.</li>
+  </ul>
+
+  <div class="callout c-info"><span class="tag">Rental admin fees</span>
+    <p>If a ZTL fine does arrive, challenge the hire company's "admin fee". Hertz Italy's own June 2026 terms state verbatim that where Italian consumer law applies, <em>"le Spese di Gestione Multe non saranno applicate"</em>, and the Italian competition authority has held such clauses unfair. Check your own supplier's Italian T&amp;Cs. Also confirm the <strong>fuel policy</strong> (full-to-full is normally cheapest) and cross-border permission if you might nip over the Brenner.</p></div>
+</div></section>
+
+<hr class="wrap">
+
+<!-- ============ SECEDA ============ -->
+<section id="seceda"><div class="wrap">
+  <h2><span class="num">06</span>Seceda in detail</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h4>Tickets, summer 2026</h4>
+      <div class="tw" style="margin:0"><table style="min-width:0">
+        <tbody>
+          <tr><td>Full return, adult</td><td class="n money">€74.00</td></tr>
+          <tr><td>Full one way</td><td class="n money">€49.00</td></tr>
+          <tr><td>Junior 8–15.99, return</td><td class="n money">€37.00</td></tr>
+          <tr><td>Online, 5% off</td><td class="n money">~€70.50</td></tr>
+        </tbody>
+      </table></div>
+      <p style="margin-top:12px; font-size:14.5px">No family or senior rate. <strong>Dolomiti Super Summer passes are not accepted.</strong></p>
+    </div>
+    <div class="card">
+      <h4>No guest card helps you</h4>
+      <ul class="tight" style="font-size:14.5px">
+        <li><strong>Val Gardena Guest Pass</strong> — only from Val Gardena accommodation, and it explicitly excludes Val Gardena lifts.</li>
+        <li><strong>Südtirol Guest Pass</strong> — buses, regional trains, and the Renon/Colle/Mendola lifts. Does not cover Seceda or Alpe di Siusi.</li>
+        <li><strong>Gardena Card</strong> — €124 for 3 days. A pass, not a discount; terrible value for one afternoon.</li>
+      </ul>
+      <p style="font-size:14.5px; margin:0"><strong>Budget €148 for two returns, ~€141 online.</strong></p>
+    </div>
+  </div>
+
+  <h3>The walks — do the ridge and nothing else</h3>
+  <ul class="tight">
+    <li><strong>✅ The ridge line.</strong> ~1 km along the crest past the 2,519 m summit cross. Flat, broad gravel, out-and-back 45–70 min. This is the famous view. A €5 turnstile now gates the continuation toward Panascharte — the official page itself notes it is "not essential".</li>
+    <li><strong>❌ Pieralongia.</strong> The official family route starts from Col Raiser, not Seceda. From Seceda it's 300 m down and 300 m back up. Not feasible in your window.</li>
+    <li><strong>❌ Troier hut.</strong> 4.2 km; at your pace you'd arrive at its 17:00 closing.</li>
+    <li><strong>❌ Descending via Col Raiser.</strong> Different operator, separate ticket (€23/€34), closes 17:30 — and Santa Cristina is 500 m below where your car is parked.</li>
+  </ul>
+
+  <h3>If Seceda is clouded out</h3>
+  <p>Take the <strong>Ortisei → Mont Sëuc gondola</strong> instead: 08:30–18:00 (half an hour later than Seceda), <span class="money">€29</span> single / <span class="money">€41</span> return, top station 2,000 m with near-flat walking. Same valley station area, and its 240-space Setil garage connects to the Seceda station via a 295 m covered escalator tunnel.</p>
+
+  <h3>What it's like up there in September</h3>
+  <p>Derived from the provincial weather service's own station records (Plose, 2,477 m, 1–15 September, 2014–2025): <strong>mean daily max 9.5 °C, mean daily min 3.8 °C</strong>, absolute range −6.4 to +17.0 °C. Afternoon wind typically 5–12 km/h with a top decile of 20–30 km/h. And <strong>relative humidity is ≥95% in 39% of afternoon observations</strong> — meaning roughly four afternoon hours in ten at 2,500 m are cloud-immersed. The cloud base typically sits between 2,050 m and 2,470 m, exactly the Seceda band.</p>
+  <p>Sunshine at ridge level peaks 08:00–11:00 (~70%) and falls to 50–57% in the afternoon. Convective initiation peaks around 18:00 CEST; mean cell lifetime is 52 minutes. So: an afternoon that starts clear can cloud over, and it usually clears again — but have the hut in mind.</p>
+</div></section>
+
+<hr class="wrap">
+
+<!-- ============ SIUSI ============ -->
+<section id="siusi"><div class="wrap">
+  <h2><span class="num">07</span>Alpe di Siusi access</h2>
+  <p class="lede">One road, one checkpoint. There is no separate route up from Kastelruth — everything funnels through the Seiser-Alm-Straße from St. Valentin.</p>
+
+  <div class="tw"><table>
+    <thead><tr><th></th><th>P1 Spitzbühl</th><th>P2 Compatsch</th></tr></thead>
+    <tbody>
+      <tr><td>Car / day</td><td class="n money">€15.00</td><td class="n money">€30.00</td></tr>
+      <tr><td>Access control</td><td>None — park freely</td><td>Barrier, QR scanned in <em>and</em> out</td></tr>
+      <tr><td>After 17:00</td><td>Free, reservation still required</td><td>Reservation required</td></tr>
+    </tbody>
+  </table></div>
+
+  <h4>Booking rules, verbatim from the official page</h4>
+  <ul class="tight">
+    <li>Bookable <strong>up to six days before</strong> arrival.</li>
+    <li>"The checkpoint in St. Valentin must be passed by 09:00am."</li>
+    <li>"Entry to the P2 Compatsch or P1 Spitzbühl car park must take place no later than 9:30 a.m." Later is refused, <strong>no refund</strong>.</li>
+    <li>"the parking reservation entitles you to a <strong>single entry</strong>. After exiting, the ticket becomes invalid. Re-entry is not permitted."</li>
+    <li>No cancellations, changes, refunds, or licence-plate edits after booking.</li>
+    <li>No parking 23:00–05:00 — so you may arrive from 05:00.</li>
+  </ul>
+
+  <h4>Who is exempt (you are not)</h4>
+  <p>Residents on the Alpe and their relatives, cableway and trade operators, farm owners and tenants, suppliers, <strong>guests staying in accommodation on the Alpe itself</strong>, and European Disability Card holders. <strong>A guest lodging in Bolzano has no way to drive up during 09:00–17:00.</strong> Enforcement is by ANPR cameras at five points: St. Valentin, Jochstraße, Compatsch, Pufels, Jender.</p>
+  <p class="src">⚠️ Whether a commercial photoshoot permit category exists is unverified — the portal lists none. If the photographer needs mid-day vehicle access, ring the Comune di Castelrotto or info@seiseralm.it / +39 0471 709600.</p>
+
+  <h4>Buses on the day</h4>
+  <ul class="tight">
+    <li><strong>Almbus line 11</strong> (Compatsch–Ritsch–Saltria): €4 single / €7 return, ~every 20 min core. <strong>⚠️ From 7 Sep the late extra runs are withdrawn</strong> — last Compatsch→Saltria 18:40, last Saltria→Compatsch 18:55.</li>
+    <li><strong>Line 10 "Seiser Alm Express"</strong> (Kastelruth/Seis → Compatsch) is an authorised vehicle and runs during the ban. €21 single / €30 return. Last down from Compatsch 17:50 on your date — the 19:10 run stops after 6 Sep.</li>
+    <li><strong>Neither line 10 nor 11 accepts the Südtirol Guest Pass</strong> — only the Combi Card or Seiser Alm Card Gold.</li>
+    <li><strong>Spitzbühl chairlift runs only 25 Jul – 6 Sep 2026 — closed on 8 September.</strong></li>
+  </ul>
+</div></section>
+
+<hr class="wrap">
+
+<!-- ============ WEDNESDAY ============ -->
+<section id="wed"><div class="wrap">
+  <h2><span class="num">08</span>Wednesday options from Brunico</h2>
+  <p class="lede">Moving your base to Brunico changes what's reachable. Val Pusteria opens up; the Bolzano-side classics drop out. Ranked by reward per unit of driving and walking.</p>
+
+  <div class="grid">
+    <div class="card">
+      <h4>① Braies early + San Candido <span class="pill p-ok">recommended</span></h4>
+      <p style="font-size:15px">~40 min each way. Arrive before 09:00 and the €44 ticket doesn't apply at all. Flat west-shore walk on an empty lake, coffee at Emma's Bistro from 09:00, out by 10:45. Afternoon at leisure in San Candido.</p>
+      <p style="font-size:14.5px; margin:0"><strong>Cost:</strong> parking only. <strong>Effort:</strong> minimal. <strong>Saves:</strong> €44.</p>
+    </div>
+    <div class="card">
+      <h4>② Braies early + Kronplatz <span class="pill p-ok">verified · recommended</span></h4>
+      <p style="font-size:15px"><strong>Kronplatz 2000 from Riscone</strong> — ~10 min from your door — runs <strong>16 May – 8 Nov 2026, daily 09:00–17:00</strong>. At the top, <strong>LUMEN</strong> (photography) is <em>in</em> the summit station building and is lift-served and wheelchair-accessible; <strong>MMM Corones</strong> (Zaha Hadid) is a short level walk along the plateau edge.</p>
+      <p style="font-size:14.5px; margin:0">Both open <strong>10:00–16:00, last admission 15:30</strong>. MMM Corones €14, LUMEN €17, <strong>combined <span class="money">€22</span></strong> — take the combined. ⚠️ Lift fare not published; budget €30–35 pp return.</p>
+    </div>
+    <div class="card">
+      <h4>③ Braies early + Val Fiscalina <span class="pill p-ok">verified · best easy walk found</span></h4>
+      <p style="font-size:15px">From the <strong>Fischleinboden car park</strong> it is <strong>~2 km, a 20–30 minute walk on a flat trail</strong> to the <strong>Talschlusshütte</strong> (1,548 m) — the hut's own words. Trail 102: wide, compacted gravel, gently rising, officially pram-suitable and rated handicapped-accessible. Round trip ~4 km, ~1 hour walking, ~90 m of ascent.</p>
+      <p style="font-size:14.5px; margin:0">Hut open <strong>1 Jul – 30 Sep, 10:00–18:00</strong>, warm food from 11:30, step-free dining room and terrace. This is the big-mountain amphitheatre without the toll road, the €40 or the booking.</p>
+    </div>
+    <div class="card">
+      <h4>④ Wet-weather day</h4>
+      <p style="font-size:15px"><strong>MMM Ripa</strong> in Brunico Castle — 10:00–18:00, <span class="money">€14</span>, <strong>closed Tuesdays so it must be today</strong>. Plus the pedestrian Stadtgasse, the medieval gates and a long lunch.</p>
+      <p style="font-size:14.5px; margin:0">Braies in rain is genuinely not worth the early alarm — the lake's whole point is reflection and colour.</p>
+    </div>
+  </div>
+
+  <div class="callout c-danger" style="margin-top:22px">
+    <span class="tag">Don't · Tre Cime di Lavaredo, even though you're now close</span>
+    <p>Brunico puts you within about an hour of the Tre Cime toll road, which makes it tempting in a way it wasn't from Bolzano. It still isn't worth it on this trip. The road is <span class="money">€40</span> per car and needs a <strong>pre-booked slot with your plate</strong> at <span class="src">pass.auronzo.info</span>; the booking calendar is capacity-limited and can sell out.</p>
+    <p>The booking is plate-based, read by an automatic barrier, and <strong>the ticket dies the moment you exit the car park</strong> even if its 12 hours aren't used. The genuinely easy part — Rifugio Auronzo to Rifugio Lavaredo on trail 101, completely flat, 20 minutes each way — is lovely, but the full loop is 9.5 km with 400 m of ascent.</p>
+    <p><strong>Val Fiscalina gives you the same kind of view for the price of a car park</strong>, on a flatter path. And on Thursday you pass Misurina anyway, which gives you the Cadini and Sorapiss for free.</p>
+  </div>
+
+  <div class="callout c-warn">
+    <span class="tag">Now out of range from Brunico</span>
+    <p>Lago di Carezza, the Sella Ronda pass loop with Sass Pordoi, the Renon plateau and Val di Funes are all 1h30–2h each way from Brunico. They were on the Bolzano-base shortlist; none is a sensible day trip now. Noted only so you don't plan around them.</p>
+  </div>
+
+  <div class="callout c-good">
+    <span class="tag">⑤ Reconsidered at five people · Tre Cime di Lavaredo</span>
+    <p>I advised against this when the trip was for two. <strong>At five it changes.</strong> The toll is <span class="money">€40</span> per car — <strong>€8 a head</strong> — and Brunico puts you about an hour away.</p>
+    <p><strong>The walk is genuinely easy:</strong> Rifugio Auronzo to Rifugio Lavaredo on trail 101 is <strong>completely flat, 20 minutes each way</strong> on a wide gravel service track. That's the classic three-peaks view for 40 minutes of level walking.</p>
+    <p><strong>A workable Wednesday:</strong> Braies 08:00–10:45 → drive to Misurina ~1 h → toll road → at Rifugio Auronzo ~12:15 → flat walk and lunch → leave 14:30 → Brunico ~16:00. Drop San Candido.</p>
+    <p>🔒 <strong>Requires a pre-booked slot with your plate</strong> at <span class="src">pass.auronzo.info</span>. The barrier reads the plate, the ticket lasts 12 hours, and it <strong>dies the moment you exit</strong>. Book well ahead — the calendar is capacity-limited.</p>
+  </div>
+
+</div></section>
+
+<hr class="wrap">
+
+<!-- ============ VENICE ============ -->
+<section id="venice"><div class="wrap">
+  <h2><span class="num">09</span>Venice from Marghera</h2>
+
+  <h3>Getting in — bus line 6, and nothing else</h3>
+  <p>Stop <strong>"Trieste Eraclea", 85 m from Via Grado 3</strong>, direct to Venezia Piazzale Roma (bay A3). <strong>17 minutes, every 20 minutes, seven days a week.</strong> First 04:11, last 00:03; last bus back from Piazzale Roma <strong>00:40</strong>.</p>
+  <p>Don't bother with the train — Venezia Mestre is 1.4 km away and line 6 leaves from your doorstep and goes to the same place.</p>
+
+  <h3>Tickets — the €1.50 vs €9.50 trap</h3>
+  <div class="tw"><table>
+    <thead><tr><th>Ticket</th><th>Price</th><th>Covers</th></tr></thead>
+    <tbody>
+      <tr><td>Ordinario 75 min, <em>automobilistico</em></td><td class="n money">€1.50</td><td>Bus, tram, People Mover. <strong>NOT the vaporetto.</strong></td></tr>
+      <tr><td>Ordinario 75 min, <em>rete unica</em></td><td class="n money">€9.50</td><td>Everything including the vaporetto.</td></tr>
+      <tr><td>On-board bus ticket</td><td class="n money">€3.00</td><td>Cash, exact change.</td></tr>
+      <tr><td><strong>Venezia Daily Pass 24 h</strong></td><td class="n money">€25.00</td><td>Full network. Worth it after 3 boat rides.</td></tr>
+      <tr><td>48 h</td><td class="n money">€35.00</td><td></td></tr>
+      <tr><td>72 h</td><td class="n money">€45.00</td><td></td></tr>
+    </tbody>
+  </table></div>
+  <p><strong>Cost logic:</strong> bus-only Marghera↔P.le Roma is <span class="money">€6/day</span> for two. Buy a day pass only for Saturday, when you'll ride four-plus boats.</p>
+  <div class="callout c-danger">
+    <span class="tag">Validate on every boarding</span>
+    <p>ACTV's rule is verbatim <em>"all'inizio del viaggio e ad ogni cambio di mezzo"</em> — on boarding <strong>and at every change, including with a multi-day pass</strong>. This is the number-one way tourists get fined. On the spot: <span class="money">€56.50</span> on land, <span class="money">€64.50</span> on the water; €316.50/€324.50 after 60 days.</p>
+  </div>
+
+  <h3>Parking the car in Marghera</h3>
+  <ul class="tight">
+    <li><strong>Blue lines ("Zona Rosa"):</strong> €0.80/h, charged 08:00–13:00 and 15:00–20:00, <strong>Monday to Saturday</strong>. Free overnight, free 13:00–15:00, free all Sunday. Note Saturday <em>is</em> a charging day in Italy.</li>
+    <li><strong>White lines are free</strong> unless signed otherwise, and much of Marghera outside the Zona Rosa is white.</li>
+    <li><strong>Free alternative:</strong> P1 – Marghera B, via Trieste, an official park-and-ride.</li>
+    <li>⚠️ Whether Via Grado 3 itself is inside the Zona Rosa is unverified — read the kerb signage on arrival.</li>
+  </ul>
+  <div class="callout c-danger">
+    <span class="tag">Do not drive into central Mestre</span>
+    <p>Mestre has its own ZTL and it is <strong>24/7</strong> — verbatim <em>"IN VIGORE TUTTI I GIORNI FERIALI E FESTIVI DALLE ORE 00:00 ALLE ORE 24:00"</em> — with 8 ANPR gates. Fine €58.10–€83.00 plus the rental company's handling. Marghera itself has no ZTL.</p>
+  </div>
+
+  <h3>Driving into Venice: possible, pointless</h3>
+  <p>Piazzale Roma garage is <span class="money">€35</span>/24 h <em>non-divisible</em>; Tronchetto <span class="money">€29</span>; Garage San Marco <span class="money">€45</span>. Two days is €58–€90 versus €6/day on the bus — and <strong>the car buys you zero extra metres</strong>, because Piazzale Roma is the end of the road and line 6 drops you there in 17 minutes. On high-influx days the Comune can restrict the causeway to subscription holders, taxis and buses; a tourist in a hire car is exactly who gets turned away.</p>
+
+  <h3>City fines you can actually trigger</h3>
+  <div class="tw"><table>
+    <thead><tr><th>Behaviour</th><th>Fine</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Sitting or lying on the ground, steps, bridges, fondamente or monuments — including to eat</strong></td><td class="n">€100–200 <strong>+ removal order</strong></td></tr>
+      <tr><td>Being bare-chested or in swimwear</td><td class="n">€250</td></tr>
+      <tr><td>Feeding pigeons or seagulls</td><td class="n">€25–500</td></tr>
+      <tr><td>Cycling — <em>including wheeling a bike by hand</em></td><td class="n">€100</td></tr>
+      <tr><td>Littering</td><td class="n">€350</td></tr>
+      <tr><td>Swimming in a canal</td><td class="n">€350</td></tr>
+    </tbody>
+  </table></div>
+  <p>The ones tourists actually get caught by are <strong>sitting on bridge steps to eat</strong> and swimwear. Piazza San Marco is patrolled. Eat standing at a bàcaro or sit at a table.</p>
+
+  <h3>Acqua alta — low risk on your dates</h3>
+  <p>Roughly 75% of tides ≥110 cm occur October–December, peaking in November; July and August have never recorded one. September sits in the low-frequency shoulder, and MOSE has been operational since December 2020. Don't buy plastic overshoes preemptively. If it does happen, walkways go up — and <strong>sitting on the passerelle is a €100–200 fine</strong>.</p>
+</div></section>
+
+<hr class="wrap">
+
+<!-- ============ FOOD ============ -->
+<section id="food"><div class="wrap">
+  <h2><span class="num">10</span>Eating and drinking</h2>
+  <p class="lede">South Tyrol is an Austrian-Italian hybrid — dumplings and Riesling as readily as pasta. Venice is a lagoon cuisine built on small plates. Two completely different food cultures in one week.</p>
+
+  <div class="callout c-warn">
+    <span class="tag">Scope note — read this</span>
+    <p>The dedicated venue-level research pass (Michelin, Slow Food, consortium sites, restaurants' own pages) <strong>did not complete</strong> — the research tooling hit its search budget mid-run. So this section covers <strong>dishes, customs, seasonality, pricing rules and traps</strong>, which are stable and well-established, but it deliberately contains <strong>no named restaurants, addresses, opening hours or booking details</strong>, because none of those could be verified here.</p>
+    <p><strong>One exception:</strong> the Lago di Braies pass did complete and is fully sourced — see below. Everything else here is orientation rather than a plan, and Bolzano, the mountain huts and Venice still need a venue-level research pass.</p>
+  </div>
+
+  <h3>South Tyrol — what to actually order</h3>
+  <div class="grid">
+    <div class="card">
+      <h4>Savoury</h4>
+      <ul class="tight" style="font-size:15px; margin:0">
+        <li><strong>Speck Alto Adige PGI</strong> — juniper-smoked, air-cured ham. The regional signature. Order a <em>Marende</em> / <em>tagliere</em>: speck, mountain cheese, Schüttelbrot, pickles.</li>
+        <li><strong>Canederli / Knödel</strong> — bread dumplings, either in clear broth or with melted butter and chives. The default hut lunch.</li>
+        <li><strong>Schlutzkrapfen</strong> — half-moon ravioli of spinach and ricotta, browned butter, parmesan.</li>
+        <li><strong>Gulaschsuppe</strong> — paprika beef soup. Exactly right at 2,000 m.</li>
+        <li><strong>Schüttelbrot</strong> — brittle rye flatbread; <strong>Vinschgauer</strong> — dense rye rolls.</li>
+        <li><strong>Graukäse</strong> — sour "grey cheese", a Slow Food Presidium. Pungent, genuinely local, not for everyone.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>Sweet</h4>
+      <ul class="tight" style="font-size:15px; margin:0">
+        <li><strong>Apfelstrudel</strong> — this is apple country; Mela Alto Adige is PGI-protected.</li>
+        <li><strong>Kaiserschmarrn</strong> — shredded, caramelised pancake with cranberry compote. Usually enough for two.</li>
+        <li><strong>Topfenstrudel</strong>, <strong>Buchteln</strong>, and <strong>Zelten</strong> (dense fruit-and-nut Christmas bread, sometimes year-round).</li>
+      </ul>
+      <h4 style="margin-top:18px">Drink</h4>
+      <ul class="tight" style="font-size:15px; margin:0">
+        <li><strong>Lagrein</strong> — the dark, structured Bolzano red. The local answer.</li>
+        <li><strong>Schiava / Vernatsch</strong> — light, cherryish red; <strong>Santa Maddalena</strong> is the Bolzano hillside version and is named after the very village whose access roads are now barriered.</li>
+        <li><strong>Gewürztraminer</strong> — from Tramin, 25 km south of Bolzano. Aromatic, off-dry.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="callout c-warn">
+    <span class="tag">Törggelen is too early</span>
+    <p>The autumn harvest-tavern ritual — new wine, roast chestnuts, speck, in farmhouse <em>Buschenschänke</em> — is the great South Tyrolean food event, but it traditionally starts <strong>late September into October</strong>. Your 7–10 September window is almost certainly too early. Worth a check with the tourism office in case an early opener exists near Bolzano.</p>
+  </div>
+
+  <h3>Mountain huts <span class="pill p-ok">verified — 53-hut official dataset</span></h3>
+  <p>Two pieces of common advice about South Tyrolean huts turn out to be wrong, and one is right.</p>
+
+  <div class="callout c-good">
+    <span class="tag">They are not cash-only, whatever you've read</span>
+    <p>Of the 53 huts in the Alpe di Siusi tourism board's own database, 21 publish payment methods — <strong>19 accept credit cards, 17 Bankomat/Maestro, and exactly one lists cash alone.</strong> Even Rifugio Bolzano at 2,457 m takes cards.</p>
+    <p>It is also the law: since <strong>1 January 2023</strong>, refusing a card payment <em>of any amount</em> carries a <strong>€30 fine plus 4% of the transaction</strong> (art. 19-ter, D.L. 152/2021). The only statutory exemption is "objective technical impossibility" — there is no mountain-hut carve-out.</p>
+    <p><strong>Still carry €60–100 in notes per day</strong> for small Schwaigen and dead terminals — but expect to pay by card, and know that a refusal is illegal.</p>
+  </div>
+
+  <div class="callout c-warn">
+    <span class="tag">They don't all shut at 17:00 — but the kitchen does</span>
+    <p>The <strong>hot-food window is the real constraint</strong>, and it's tight: across the 43 huts publishing one, service starts <strong>11:00 (19 huts) or 11:30 (15 huts)</strong> and ends at <strong>15:00, 15:30 or 16:00</strong>. Rifugio Firenze on Seceda is 11:30–15:00, with a reduced menu after. Baita Troier is 11:30–15:30.</p>
+    <p>But most huts stay open well past that for drinks, cake and a cold <em>Marende</em>, and huts with beds run a second kitchen ~18:00–19:30. <strong>Be sitting down by 14:00; treat 15:00 as the hard cutoff for a hot meal.</strong></p>
+  </div>
+
+  <div class="callout c-danger">
+    <span class="tag">Rest days — and yours are exactly the risky ones</span>
+    <p>Several huts close one weekday, and your mountain days are <strong>Monday, Tuesday, Wednesday</strong>. Known closures: <strong>Radauer and Untertrompedeller — Monday. Gstatsch Schwaige — Tuesday. Rauchhütte — Wednesday.</strong> (Dibaita Thursday; Ritsch Schwaige Friday; Edelweiss, Messner Schwaige and Wild-o-Williams Saturday.) Check the specific hut before you walk to it.</p>
+    <p>Useful field sign: <strong>if the South Tyrolean flag is flying, the hut is staffed and serving.</strong></p>
+  </div>
+
+  <h4>What it costs</h4>
+  <div class="tw"><table>
+    <thead><tr><th>Item</th><th>Typical 2026 price</th></tr></thead>
+    <tbody>
+      <tr><td>Canederli / Knödel — two, in broth or with salad</td><td class="n money">€10–17</td></tr>
+      <tr><td>Goulash soup</td><td class="n money">€10–11</td></tr>
+      <tr><td>Kaiserschmarrn</td><td class="n money">€13.50–15.50</td></tr>
+      <tr><td>Beer, 0.5 l</td><td class="n money">€6–7</td></tr>
+      <tr><td>Espresso / cappuccino</td><td class="n money">€2.00 / €3.50</td></tr>
+      <tr><td>Hugo or Aperol Spritz</td><td class="n money">€7–9</td></tr>
+      <tr><td><strong>Two people, a hot dish and a drink each</strong></td><td class="n money"><strong>€40–55</strong></td></tr>
+    </tbody>
+  </table></div>
+  <p class="src">From the published menus at Plattkofelalm (2,250 m) and Schutzhaus Molignon. Gourmet huts — Comici, Gostner Schwaige, Tirler, Zallinger — publish no price lists and will run materially higher. Note Molignon lets you order any dish as a small portion for €2 less.</p>
+
+  <h4>Three more things</h4>
+  <ul class="tight">
+    <li><strong>You don't need to book lunch.</strong> Rifugio Firenze states flatly <em>"Non si prendono prenotazioni per il pranzo"</em>; Sanon says the same. Only 2 of 53 huts even offer online table booking. Book ahead only for the gourmet huts, for dinner, or for an overnight.</li>
+    <li><strong>It's table service, not a canteen.</strong> The tourism board's own line: <em>"there are no large self-service restaurants here."</em> You sit, you're served, you pay at the end.</li>
+    <li><strong>Free tap water is not a norm</strong> — no menu offers it, and the Alpine Club's own rules price tea water at €3/litre. Carry a bottle and fill it in the village.</li>
+  </ul>
+
+  <div class="callout c-good">
+    <span class="tag">Your dates are peak-open, not shoulder</span>
+    <p>Of all 53 huts, <strong>only one closes before 20 September 2026</strong>. Most run to mid-October or into November. You are ~5 days before even the first minor lift schedule step-down (Col Raiser 13 Sep, Seiser Alm Bahn 14 Sep) and about five weeks before hut closures begin. Nothing you want will be shut for the season.</p>
+  </div>
+
+  <h4>Reading the signage</h4>
+  <p><strong>Schwaige</strong>, <strong>Alm</strong> and <strong>malga</strong> all mean a working dairy hut — own cheese, butter and bread, cheapest food, closes earliest. <strong>Rifugio</strong> or <strong>Schutzhütte</strong> means beds and a dinner service, usually higher up. <strong>Berggasthof</strong> is a proper mountain inn with the longest hours. <strong>Baita</strong> tells you nothing at all — check the hours.</p>
+
+  <h3>Lago di Braies, Wednesday morning <span class="pill p-ok">verified</span></h3>
+  <p>This one venue-level pass did complete. <strong>Nothing at the lake serves breakfast, and nothing at all opens before 09:00</strong> — which matters, because your whole Wednesday plan depends on being parked before 09:00. Bring coffee and pastry from Bolzano.</p>
+  <div class="tw"><table>
+    <thead><tr><th>From</th><th>What opens</th><th>Detail</th></tr></thead>
+    <tbody>
+      <tr><td class="n">—</td><td>Nothing</td><td>Bring your own. This is also the permit-free driving window.</td></tr>
+      <tr><td class="n"><strong>09:00</strong></td><td><strong>Emma's Bistro</strong> (bar)</td><td>⭐ Your answer. Restored historic horse stable with terrace and garden; cakes and desserts, Caroma coffee, regional wines. <strong>Kitchen only from 11:30.</strong></td></tr>
+      <tr><td class="n">09:00</td><td>Grünwaldalm / Malga Foresta</td><td>Open 09:00–18:00 daily, no rest day. <strong>Warm kitchen 10:00–16:00</strong> — there's a one-hour gap where it's open but serving no hot food. Reached on the flat west-shore gravel path, not by road. Vegetarian menu, garden, dogs allowed. +39 340 7106895</td></tr>
+      <tr><td class="n">09:00</td><td>Boat hire (La Palafitta)</td><td>7–27 Sep: first boat 09:00, last 17:30. €15 pp shared, €50 private boat. <strong>No food, drink or toilet at the boathouse.</strong></td></tr>
+      <tr><td class="n">11:45</td><td>Panorama Restaurant</td><td>Lunch only, 11:45–14:00, lakeside terrace and Belle Époque dining room. Too late for your schedule.</td></tr>
+      <tr><td class="n">?</td><td>The Chalet (takeaway)</td><td>Schnitzel, sausage, burger, plus cake and cappuccino, by the car park. ⚠️ Hours not published.</td></tr>
+    </tbody>
+  </table></div>
+  <div class="callout c-warn">
+    <span class="tag">Two practical notes</span>
+    <p>The hotel is <strong>the only building at the lake</strong> and all three outlets are open to day visitors. It takes Visa, Mastercard and debit but <strong>not American Express</strong>. Carry some cash for Grünwaldalm and the Chalet, whose payment methods aren't published.</p>
+    <p>Worth one call to <strong>+39 0474 748602</strong>: the Chalet's hours, whether Panorama needs booking, and whether any breakfast is sold to non-residents.</p>
+  </div>
+
+  <h3>Bolzano — the shape of a day</h3>
+  <ul class="tight">
+    <li><strong>Piazza delle Erbe / Obstplatz</strong> — the daily produce market, ~200 m from Mustergasse. Speck, cheese, bread, fruit, and stalls doing hot food. The obvious breakfast-provisions and picnic stop.</li>
+    <li><strong>The Portici / Laubengasse</strong> — the arcaded main street, where the cafés, bakeries and Weinstuben are. Everything is walkable from the flat.</li>
+    <li><strong>Weinstuben</strong> — the wood-panelled taverns are the format to seek out for dinner: Knödel, Gulasch, a carafe of Vernatsch.</li>
+  </ul>
+  <div class="callout c-warn">
+    <span class="tag">Closing days matter enormously here</span>
+    <p>South Tyrol keeps Austrian habits: <strong>many restaurants close Sunday and/or Monday</strong>, and provincial rules close retail on Sundays. <strong>Your arrival dinner is Monday 7 September</strong> — check your chosen place is actually open that night before you count on it, and have a second option. Museums frequently close Mondays too.</p>
+  </div>
+
+  <h3>Venice — cicchetti, and how not to get fleeced</h3>
+  <p>The Venetian format is the <strong>bàcaro</strong>: a small wine bar where you stand at the counter, point at <strong>cicchetti</strong> (small plates — <em>baccalà mantecato</em> on polenta, <em>sarde in saor</em>, <em>folpetti</em>, <em>mozzarella in carrozza</em>) and drink an <strong>ombra</strong>, a small glass of wine. Two or three bàcari in a row is dinner, and it is both the cheapest and the best way to eat in the city.</p>
+  <h4>In season in mid-September</h4>
+  <ul class="tight">
+    <li><strong>✅ Sarde in saor</strong> — sardines with onion, pine nuts, raisins. Year-round and the definitive Venetian dish.</li>
+    <li><strong>✅ Baccalà mantecato</strong>, <strong>bigoli in salsa</strong>, <strong>fegato alla veneziana</strong>, <strong>granseola</strong> — all fine now.</li>
+    <li><strong>⚠️ Moeche</strong> (soft-shell crab) — a narrow spring and autumn window. Ask; don't assume.</li>
+    <li><strong>❌ Castraure</strong> (baby artichokes) — spring only. <strong>❌ Frittelle</strong> — Carnival only.</li>
+    <li><strong>Bussolai / esse buranei</strong> — the ring and S-shaped butter biscuits from Burano. Buy them on Burano on Saturday.</li>
+  </ul>
+  <h4>The coperto rule, precisely</h4>
+  <p><strong>Coperto is legal in Veneto</strong> — Lazio is the only region to have banned it. But under art. 18 of Regio Decreto 635/1940 the operator must make prices publicly known: <strong>if the coperto is not shown before you order, it cannot legitimately be charged.</strong> It runs €2–€6 pp. "Servizio" (10–15%) is separate; some places levy both, and a restaurant charging service <em>and</em> expecting a tip is double-dipping — <strong>tipping is not obligatory in Italy</strong>. You are entitled to a <em>ricevuta fiscale</em>.</p>
+  <div class="callout c-danger">
+    <span class="tag">The per-etto bill shock</span>
+    <p>Fish and steak are often priced <strong>"all'etto"</strong> — per 100 grams. A €9/etto sea bass is €45 if it weighs 500 g, and this is the single most common way a Venice dinner bill explodes. <strong>Ask for the weight and the total price before ordering.</strong> Disputes: Polizia Locale 041 2747070, or the city's 041 041 line.</p>
+  </div>
+  <h4>Where not to eat</h4>
+  <p>The restaurants directly on <strong>Piazza San Marco, the Riva degli Schiavoni, and the streets immediately around the Rialto bridge</strong> — coperto plus service plus per-etto pricing, with photo menus and touts as the tell. You only need to walk <strong>five minutes</strong> into Castello, Cannaregio or Dorsoduro to escape it entirely. Caffè Florian and Lavena on the Piazza are genuinely historic but levy a substantial <strong>orchestra surcharge</strong> when the band plays — that is legitimate and disclosed, but know it before you sit.</p>
+
+  <h3>Marghera and Mestre</h3>
+  <p>You sleep on the mainland, which is a working town where prices are a fraction of the islands. Thursday's arrival dinner and any night you get back late are best eaten locally rather than trekking back into Venice. There is a supermarket within easy reach of Via Grado for breakfast provisions — worth doing, as breakfast in Venice is expensive and unremarkable.</p>
+
+  <h3>Practicalities</h3>
+  <ul class="tight">
+    <li><strong>Meal times:</strong> Italy eats lunch 12:30–14:30 and dinner 19:30–22:00. <strong>South Tyrol eats earlier</strong> — dinner from 18:30, and kitchens can close by 21:00. Don't roll up in Bolzano at 21:30.</li>
+    <li><strong>Cards:</strong> Italian merchants are legally obliged to accept card payment, and since Jan 2023 refusing a card of any amount carries a €30 + 4% fine. <strong>Mountain huts are not the exception people claim</strong> — 19 of the 21 Alpe di Siusi huts that publish payment methods take credit cards. Carry €60–100 in cash anyway for dead terminals.</li>
+    <li><strong>Booking:</strong> anywhere good in Venice on a Friday or Saturday in September needs booking, often several days out. Bàcari never do.</li>
+  </ul>
+</div></section>
+
+<hr class="wrap">
+
+<!-- ============ MISTAKES ============ -->
+<section id="mistakes"><div class="wrap">
+  <h2><span class="num">11</span>Mistakes to avoid</h2>
+
+  <h3>Dolomites</h3>
+  <ol class="tight">
+    <li><strong>Driving into Bolzano old town without the plate registered.</strong> 24/7, 14 gates, €83–€332 per crossing. In and out is two fines.</li>
+    <li>Assuming the Bolzano ZTL "switches off" at some point. It does not.</li>
+    <li>Booking a tall hire car and relying on Parking Walther's 2.10 m limit.</li>
+    <li>Parking on white lines in the Bolzano centro zone — residents only.</li>
+    <li><strong>🚨 Trying to drive up to Alpe di Siusi in the afternoon.</strong> Uphill private traffic is banned 09:00–17:00 and enforced by camera at St. Valentin. There is no afternoon ticket. Your 14:00 arrival must be by cable car from Seis.</li>
+    <li><strong>🚨 Assuming the last cable car down is 19:00.</strong> The printed 2026 brochure says 18:00. Until you've confirmed, plan for 18:00 — being stranded up there ends the day and the Brunico check-in.</li>
+    <li>If you do drive up (the post-17:00 golden-hour option): the parking ticket is <strong>single entry</strong>, exiting voids it, and it cannot be refunded, changed or have its plate edited.</li>
+    <li><strong>Arriving at Seceda for 08:00.</strong> First ascent is 08:30.</li>
+    <li>Planning to descend via Col Raiser — different operator, separate ticket, and your car is 500 m above where you'd land.</li>
+    <li>Assuming a guest card gets you lift discounts. Neither pass covers Val Gardena or Alpe di Siusi lifts, nor the Almbus.</li>
+    <li>Buying a Dolomiti Super Summer pass for Seceda — not accepted.</li>
+    <li><strong>Planning Lago di Braies off 2025 information.</strong> The 2026 window is 1 Jul – 15 Sep, 09:00–16:00 — wider and earlier.</li>
+    <li>Booking the Braies ticket same-day — you forfeit the €22 voucher.</li>
+    <li><strong>Detouring to the Tre Cime toll road from Misurina on Thursday.</strong> €40 per car, a pre-booked slot required at pass.auronzo.info, and you do not have the time on a day that ends with an 18:00 car return.</li>
+    <li><strong>Underestimating September at altitude.</strong> ~9 °C max at 2,500 m, sub-zero nights possible, 40% chance of cloud immersion in the afternoon. Layers and a wind shell, especially for a dawn photoshoot.</li>
+    <li>Assuming shops are open on Sunday in South Tyrol, or museums on Monday. Several mountain huts also take a weekday off — <strong>Gstatsch Schwaige closes Tuesday, Rauchhütte Wednesday</strong>.</li>
+    <li><strong>Letting Cortina overrun on Thursday.</strong> Departure at 14:00 is a hard deadline, not a suggestion — Cortina to VCE is 2h30–3h and the car is due back at 18:00.</li>
+    <li>Returning the hire car without photographing the fuel gauge, mileage and all four corners.</li>
+    <li>Reaching the airport without refuelling — the "not returned full" charge is worse than the local pump.</li>
+  </ol>
+
+  <h3>Venice</h3>
+  <ol class="tight" start="18">
+    <li><strong>Buying the €1.50 ticket and boarding a vaporetto.</strong> It is land-only; the boat version is €9.50.</li>
+    <li>Not validating on every boarding, including with a multi-day pass.</li>
+    <li>Driving into central Mestre — 24/7 ZTL, 8 cameras.</li>
+    <li>Driving into Venice — €29–€45/day for zero benefit.</li>
+    <li>Paying a rental company's ZTL "admin fee" without challenging it.</li>
+    <li><strong>Buying a September Venice "access fee" ticket.</strong> It doesn't apply. Anyone selling one is scamming you.</li>
+    <li><strong>Paying a gondolier per person.</strong> €90 per gondola for 30 min, up to 5 people. Serenades are extra and unregulated. Note your start time.</li>
+    <li>Sitting on bridge steps to eat — €100–200 plus a removal order.</li>
+    <li>Buying Basilica tickets from a reseller — named, non-transferable, and you can be turned away.</li>
+    <li>Going to Torcello mid-day without phoning 800 845 065 twenty minutes ahead.</li>
+    <li>Taking a "free launch to a Murano glass demonstration".</li>
+    <li>Going to the Lido on Sat 12 Sep — Film Festival closing day.</li>
+    <li>Ordering fish without asking the per-etto weight.</li>
+    <li><strong>🚨 Leaving Marghera at 10:00 on Sunday.</strong> You have no car, it's a Sunday, and check-out clashes with the flight. Leave by <strong>07:00</strong> and pre-book a taxi if the buses look thin.</li>
+    <li>Spending both Friday and Saturday on the islands and never seeing St Mark's, the Doge's Palace, the Frari or San Rocco.</li>
+    <li>Missing the <strong>Friday/Saturday Doge's Palace late opening to 23:00</strong> — the single best crowd-avoidance lever available on your dates, at no extra cost.</li>
+  </ol>
+</div></section>
+
+<hr class="wrap">
+
+<!-- ============ RECHECK ============ -->
+<section id="recheck"><div class="wrap">
+  <h2><span class="num">12</span>Re-check before you go</h2>
+  <p class="lede">Everything above is 2026 published data unless listed here. These are the items that were unverifiable, or that change seasonally.</p>
+  <div class="tw"><table>
+    <thead><tr><th>Item</th><th>Why</th><th>How</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Seceda last ascent / descent</strong></td><td>Two official sources disagree (17:30 vs 18:00); neither publishes a last-ascent time</td><td class="src">+39 0471 796 531</td></tr>
+      <tr><td><strong>Seis cable car last run 8 Sep</strong></td><td>Printed brochure says 18:00, website says 19:00</td><td class="src">info@seiseralmbahn.it</td></tr>
+      <tr><td><strong>🚨 All ACTV times for 10–13 Sep</strong></td><td>The autumn schedule is unpublished — ACTV's own timetable service errors on your exact dates. Every bus/tram time here is from the first week of September.</td><td class="src">actv.avmspa.it — re-check late August</td></tr>
+      <tr><td>ATVO 35b September timetable &amp; fare</td><td>The published PDF only covers 14 Jun – 30 Aug 2026</td><td class="src">atvo.it</td></tr>
+      <tr><td>Venice access fee</td><td>Annually-decided experiment; currently closed for 2026</td><td class="src">cda.ve.it — 5-minute check</td></tr>
+      <tr><td><strong>Post-17:00 drive up to Compatsch</strong></td><td>Decides whether you get golden hour on the plateau; official pages appear to conflict</td><td class="src">+39 0471 709600 · info@seiseralm.it</td></tr>
+      <tr><td>Fischleinboden parking tariff &amp; any road restriction</td><td>Comune di Sesto's 2025 parking page is offline; no tariff published anywhere official</td><td class="src">+39 0474 710044 · +39 0474 710310</td></tr>
+      <tr><td>Kronplatz lift fare · Riscone parking</td><td>Operator routes pricing offsite and publishes no summer tariff</td><td class="src">kronplatz.com — budget €30–35 pp</td></tr>
+      <tr><td>Collegiate Church, San Candido — hours</td><td>Entry is free, but no official page publishes opening times</td><td class="src">+39 0474 913149</td></tr>
+      <tr><td><strong>VCE → Marghera, and Sunday reverse</strong></td><td>You have no car from Thu 18:00; Sunday is a Sunday</td><td class="src">actv.avmspa.it · atvo.it</td></tr>
+      <tr><td><strong>Cortina → VCE drive time</strong></td><td>Thursday has no slack; also check post-Olympic roadworks</td><td class="src">ANAS · cortinadampezzo.it</td></tr>
+      <tr><td><strong>Rental desk staffed at 18:00 Thu</strong></td><td>An unstaffed desk at handover is a bad surprise</td><td class="src">Your rental confirmation</td></tr>
+      <tr><td>Misurina &amp; Lago di Dobbiaco parking tariffs</td><td>Neither comune nor DMO publishes a rate</td><td class="src">Pay on arrival; small sums</td></tr>
+      <tr><td>Ötzi museum &amp; MMM Firmian</td><td>Hours, closing day, booking not verified</td><td class="src">Museum sites</td></tr>
+      <tr><td>Val di Funes barriers</td><td>Municipal ordinances have expired off the comune site</td><td class="src">Comune di Funes +39 0472 840121</td></tr>
+      <tr><td>San Giorgio Maggiore campanile</td><td>Closed for maintenance, no reopening date published</td><td class="src">visite@abbaziasangiorgio.it</td></tr>
+      <tr><td>Basilica dei Frari hours</td><td>Taken from search snippets; the official domain would not render</td><td class="src">basilicadeifrari.it</td></tr>
+      <tr><td>Ranui chapel fee</td><td>The reported €4 turnstile fee appears on no official page</td><td class="src">Ranuihof +39 339 604 4685</td></tr>
+      <tr><td>Rittner Horn 2026 fares</td><td>Price page still shows summer 2025</td><td class="src">ritten.com</td></tr>
+      <tr><td>A22 / A4 roadworks</td><td>No September 2026 dates published for the Verona Est narrowing</td><td class="src">autobrennero.it/lavori · infoviaggiando.it</td></tr>
+      <tr><td>Mountain weather</td><td>Convective risk builds from noon, peaks ~18:00</td><td class="src">wetter.provinz.bz.it — day before each mountain day</td></tr>
+    </tbody>
+  </table></div>
+</div></section>
+
+<footer class="end"><div class="wrap">
+  <p>Compiled 16 August 2026, revised 17 August against the updated planning sheet. Primary sources: Comune di Bolzano, Comune di Venezia, Autostrada del Brennero, CAV, ACTV/AVM, Funivie Seceda, Seiser Alm/Alpe di Siusi tourism board, Silbernagl, südtirolmobil, Prags/Braies, Eggental, Comune di Auronzo, Procuratoria di San Marco, Fondazione MUVE, Provincia Autonoma di Bolzano meteorology service, US Naval Observatory.</p>
+  <p>Full sourcing and verbatim citations are in <code>venice-dolomites-sep-2026-research.md</code>.</p>
+</div></footer>
+
+</body>
+</html>

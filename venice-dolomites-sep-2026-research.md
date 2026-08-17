@@ -290,14 +290,33 @@ Booking rules, verbatim from the official reservation page:
 Season **22 May – 2 Nov 2026**. Journey ~15 min. Adult **€21 single / €30 return**; senior €18/€26; junior (2008–2017) €13/€18; children born 2018+ free; family €46/€65; dog €3/€6; bike €6/€12. Cabins take 16 and are wheelchair-accessible.
 → https://www.seiseralm.it/en/info-service/mobility/seiser-alm-aerial-cableway.html · https://www.seiseralm.it/en/info/current-information/barrier-free-in-the-dolomites-region-seiser-alm.html
 
-⚠️ **Hours conflict — treat as a real risk:**
+### Operating hours — resolved: **08:00–18:00 on Tue 8 Sep**
 
-| Source | Period covering 8 Sep | Hours |
-|---|---|---|
-| Official 2026 brochure PDF (German **and** Italian columns) | 07.09–02.11.2026 | **08:00–18:00** |
-| seiseralm.it English web pages | 15.06–14.09.2026 | 08:00–**19:00** |
+Read directly from the operator's printed 2026 brochure (https://www.seiseralm.it/media/f08d9eef-db7b-490c-9fbc-42ba1abcc812/20260514101734/sab-som2026.pdf), **BETRIEBSZEITEN / ORARI D'APERTURA**, German and Italian columns verbatim:
 
-Two of three language columns in the printed operator brochure — the more authoritative document — give **last run 18:00 on 8 September**. **Confirm with info@seiseralmbahn.it before relying on a 19:00 descent by lift.** (This only matters if you use the lift rather than the car.)
+```
+22.05.–06.06.2026:  8:00–18:00
+07.06.–06.09.2026:  8:00–19:00
+07.09.–02.11.2026:  8:00–18:00
+```
+
+**Tue 8 Sep 2026 falls in the third band → last run 18:00.**
+
+- The brochure's **English** column prints `07/06–07/09` and `07/09–02/11`, i.e. 07/09 in both bands — a typo. German and Italian agree the switch is **Mon 7 September**.
+- The **website** (https://www.seiseralm.it/en/info-service/mobility/seiser-alm-aerial-cableway-summer.html) gives different bands: 15/06–14/09 08:00–19:00, then 15/09–02/11 08:00–18:00 → would make 8 Sep a 19:00 day.
+- **Corroboration favours the brochure.** The Almbus (line 11) and Seiser Alm Express (line 10) both withdraw their late trips after **Sun 6 September** — marked *"verkehrt bis 06.09.2026"* in the Silbernagl 2026 timetables. The entire Seiser Alm transport system steps down on **Mon 7 September**. The website's 14 September boundary matches nothing else in the system.
+
+**Plan on a last descent of 18:00.** Operator: **+39 0471 704 270**, info@seiseralmbahn.it (IT: info@cabinoviasiusi.it).
+
+### Post-17:00 ascents are contemplated — the golden-hour option is real
+Same brochure, on the mandatory online parking reservation: *"**Dies gilt auch für Auffahrten nach 17:00 Uhr.**"* / *"Tale disposizione vale anche per le salite dopo le ore 17:00."* — the requirement **also applies to ascents after 17:00**. That sentence only makes sense if evening ascents are permitted with a reservation. Also confirms *"Die Parkplätze können ab 6 Tage vor der Belegung reserviert werden"* — bookable from 6 days ahead, i.e. **Wed 2 September** for a Tue 8 September ascent.
+
+### Valley-station parking, from the same brochure
+- **Large free outdoor bus and car park** at the Seiser Alm Bahn valley station.
+- **Parkgarage Walderer (P1):** €2.00/h · €8.00/day · €35.00/7 days · €50.00/14 days.
+- **Parkgarage Talstation (new):** €2.50/h · €12.00/day (from the 4th hour).
+- Three EV charging stations, each with two points; one outdoor hypercharger (100–150 kW, ~30 min).
+- **Compatsch (P2) parking €30.00/day car, €160.00/day coach.**
 
 **Parking at the Seis valley station** (Schlernstraße 39): **large outdoor lot free** (closed 22:00–06:30); Parkgarage Walderer €2.00/h, €8.00/day; Parkgarage Talstation €2.50/h, €12.00/day. Three EV chargers.
 → https://www.seiseralm.it/en/info/getting-around/traffic-regulation.html
@@ -377,7 +396,7 @@ Operator → https://www.kronplatz.com/operatingtime · https://www.kronplatz.co
 
 | Lift | Valley station | Summer 2026 | Daily hours |
 |---|---|---|---|
-| **Kronplatz 2000 (102)** | **Reischach/Riscone — nearest to Walchhorn** | **16/05 – 08/11/2026** | **09:00–17:00 daily** |
+| **Kronplatz 2000 (102)** | **Reischach/Riscone — nearest to Walchhorn** | **Sat 16/05 – Sun 08/11/2026** | **09:00–17:00 daily** |
 | Olang 1° + 2° (301/302) | Valdaora/Olang | 20/06 – 11/10/2026 | 09:00–17:00 |
 | Piz de Plaies (202) | San Vigilio | 19/06 – 04/10/2026 | 09:00–17:00 |
 
@@ -849,7 +868,7 @@ Unchanged in structure from the original research; see §10 for the sourced deta
 5. Assuming the Bolzano ZTL "switches off" at some point. It does not.
 6. Booking a tall hire car and relying on Parking Walther's **2.10 m limit**.
 7. Parking on white lines in the Bolzano centro zone — residents only.
-8. **Planning Lago di Braies off 2025 information.** The 2026 window is **1 Jul – 15 Sep, 09:00–16:00** — wider and earlier than 2025.
+8. **Planning Lago di Braies off 2025 information.** The 2026 window is **Wed 1 Jul – Tue 15 Sep, 09:00–16:00** — wider and earlier than 2025.
 9. **Booking the Braies ticket same-day** — the €22 rebate inside the €44 ticket is only given in advance. And there is **no standalone €22 product**.
 10. **Assuming the Braies lake loop is flat.** It is 3.6 km with 86 m of ascent and includes a stair path. Lago di Dobbiaco's 1.7 km / 20 min / 7 m circuit is the genuinely flat one.
 11. **Detouring to the Tre Cime toll road from Misurina.** €40 per car, mandatory plate-based online booking, and the ticket dies the moment you exit. Val Fiscalina gives a comparable view for the price of a car park.
@@ -951,7 +970,7 @@ The hotel is **the only building at the lake**; all three outlets serve day visi
 - **From the Fischleinboden car park it is ~2 km, a 20–30 minute walk on a flat trail** to the **Talschlusshütte** (1,548 m) — the hut's own words. → https://www.talschlusshuette.com/en/arrival/
 - Provincial accessibility survey: ~30 min on foot, unpaved compacted gravel, very wide, gently but continuously rising; **suitable for prams**, wheelchair-passable with assistance; step-free dining room, terrace via ramp, accessible WC. Horse-drawn carriage alternative. → https://www.suedtirolfueralle.it/de/poi/jausenstation_talschlusshuette
 - Round trip ≈ 4 km, ~1 h walking, ~90 m ascent (*derived* from car park 1,454 m vs hut 1,548 m — official from-the-car-park figures are not published, ⚠️ UNVERIFIED).
-- Hut open **1 Jul – 30 Sep and 1–25 Oct, 10:00–18:00**, warm food 11:30–18:00.
+- Hut open **Wed 1 Jul – Wed 30 Sep and 1–25 Oct, 10:00–18:00**, warm food 11:30–18:00.
 - **Road beyond the car park is closed to private traffic** (forest road); disabled-badge holders may drive with a free permit from Forststation Innichen, +39 0474 913269.
 - Buses **440 and 446** both serve "Fischleintalboden", offset to give a **~15-minute combined headway**, 14 Jun – 11 Oct 2026. **Cash only on board.** → https://www.suedtirolmobil.info/fileadmin/pdf/2026/440_20260614.pdf
 - ⚠️ **Parking tariff UNVERIFIED** — figures of €5/h to €15/day circulate but trace only to third-party aggregators. ⚠️ **Whether any time-of-day driving restriction applies is UNVERIFIED** — blog claims of a mid-June–early-Oct ban are not corroborated by any official page, and the Comune's 2025 parking page is now 404. **Call +39 0474 710310.**

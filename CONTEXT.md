@@ -83,6 +83,12 @@ attached to whoever reads the document first.
 has the hire car. **Water phase** — Thursday 18:00 onward, Venice on foot and by
 boat. Most constraints belong to one phase and are meaningless in the other.
 
+**Small bag** — the group travels with one small soft bag per Traveller, no
+large suitcases (settled 17 Aug 2026). This is load-bearing: six small bags are
+roughly 120–150 L, which fits the Peugeot 5008's ~166 L seven-seat boot, so the
+Tuesday luggage problem is a Risk and not a Blocker. If anyone brings a hard
+shell or a full-size case, the classification changes back.
+
 **Base** — where the group sleeps: Bolzano (Mon), Brunico (Tue, Wed), Marghera
 (Thu–Sat). A Base is not a destination; it is what makes a day's driving
 distances what they are.

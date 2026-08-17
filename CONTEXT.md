@@ -73,6 +73,13 @@ Actions are owned by a person, not by "someone". Two roles are settled:
   and the handover at VCE. Anything the vehicle touches is his.
 - **May** — lifts and cable cars: Seceda, the Seiser Alm Bahn, and their
   headcounts.
+- **Nhung** — the Original plan. When the group settles an Open, she writes the
+  answer back into the Google Sheet.
+
+Nhung's role is what keeps the model honest. This document is an *annotation
+layer*; the Original plan is the plan. Without someone owning the write-back,
+decisions would live only in the annotations and the two would drift apart —
+which is exactly the failure this document was built to fix.
 
 Where a Confirm straddles both — the post-17:00 Compatsch ascent is a *parking*
 reservation that buys *lift-avoidance* — it is owned by both, named explicitly.

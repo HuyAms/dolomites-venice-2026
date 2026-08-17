@@ -147,11 +147,13 @@ hr{border:0; border-top:1px solid var(--line); margin:46px 0}
 .own-james{background:#e6efeb; color:#24493e}
 .own-may{background:#e4eef4; color:#173d54}
 .own-couple{background:#f6e9ef; color:#7a3355}
+.own-nhung{background:#fbf1de; color:#7a5a12}
 .own-other{background:#f0ece6; color:var(--ink-2)}
 .own-none{background:#f6f1e9; color:var(--ink-3); border:1px dashed #d9cfbf}
 
 /* inline icons */
 .ic{display:inline-block; margin-right:7px; font-style:normal; font-size:1.02em}
+.ownline{font-size:13.5px; color:var(--ink-3); margin:0 0 11px; padding-bottom:9px; border-bottom:1px dashed rgba(0,0,0,.09)}
 .blk .label .ic{font-size:1.15em}
 nav a .ic{margin-right:5px}
 h2 .ic{margin-right:10px}
@@ -219,6 +221,7 @@ footer.end{margin-top:60px; padding:34px 0 54px; border-top:1px solid var(--line
       <span class="fact">6 travellers · 7 on Tuesday</span>
       <span class="fact">James · car, driving, parking</span>
       <span class="fact">May · lifts &amp; cable cars</span>
+      <span class="fact">Nhung · keeps the plan sheet up to date</span>
       <span class="fact">Peugeot 5008 · VCE pickup &amp; return</span>
       <span class="fact">Residence Fink, Bolzano · Mon</span>
       <span class="fact">Hölzlhof, Brunico · Tue + Wed</span>
@@ -267,6 +270,7 @@ footer.end{margin-top:60px; padding:34px 0 54px; border-top:1px solid var(--line
         <li><a href="#plan">O4</a> · <strong>Mon evening</strong> — drive to Ortisei, or stay in Bolzano?</li>
         <li><a href="#pace">O5</a> · <s>Alpe di Siusi on Monday</s> — <strong>closed</strong>, the shoot needs both mountains on Tuesday</li>
       </ol>
+      <p style="margin:12px 0 0; font-size:14px; color:var(--ink-2)">💃 <strong>Nhung</strong> writes each decision back into the plan sheet, so the sheet stays the real plan and this page stays the review of it.</p>
     </div>
 
     <div class="sumcard sc-conf">
@@ -275,7 +279,7 @@ footer.end{margin-top:60px; padding:34px 0 54px; border-top:1px solid var(--line
         <li><a href="#confirm">C3</a> · 🙋‍♂️ <strong>James</strong> — Bolzano's old town bans traffic 24 hours a day, and cameras fine you <span class="money">€83–€332</span> each time you pass one. <strong>Ask the hotel to register the car's plate</strong>, or you cannot drop the bags.</li>
         <li><a href="#confirm">C4</a> · 💁‍♀️ <strong>May</strong> — email the Alpe di Siusi cable car: <strong>what time is the last one down on Tue 8 Sep?</strong> The printed brochure says 18:00, the website says 19:00, and your plan comes down at 18:00.</li>
         <li><a href="#confirm">C5</a> · 💁‍♀️ <strong>May</strong> — cars cannot drive up Alpe di Siusi 09:00–17:00, so you must pay <span class="money">€210</span> for seven cable-car tickets. <strong>Ask if you may drive up after 17:00 instead</strong> — that would cost <span class="money">€30</span> for the whole car and give you sunset on the mountain.</li>
-        <li><a href="#confirm">C6</a> · 💁‍♀️ <strong>May</strong> — <strong>check how many Seceda tickets are booked.</strong> They cost <span class="money">€74</span> each, so the number must match exactly who goes up the mountain.</li>
+        <li><a href="#confirm">C6</a> · 💁‍♀️ <strong>May</strong> — <strong>check how many Seceda cable-car tickets are booked.</strong> Seceda is a mountain; the <span class="money">€74</span> is the return lift ticket that takes one person up and down. So the number booked must match exactly who goes up.</li>
         <li><a href="#book">🎟️</a> · if you want <strong>St Mark's Basilica</strong> or the <strong>Doge's Palace</strong>, book them — they are the only Venice things that need booking</li>
       </ol>
     </div>
@@ -320,7 +324,11 @@ footer.end{margin-top:60px; padding:34px 0 54px; border-top:1px solid var(--line
     </div>
     <div class="a-stop">
       <b class="m">B2 · Tuesday 18:00 · the last cable car down is almost certainly 18:00, not 19:00</b>
-      <p>Your sheet comes down at 18:00 and leaves Seis at 19:00. Against a 19:00 last car that is comfortable. Against an 18:00 last car <strong>you are boarding the final one of the day with no margin behind you</strong> — and the two official sources disagree about which it is.</p>
+      <p><strong>Your plan is to ride the cable car down at 18:00.</strong> The problem is that nobody knows whether 18:00 is the <em>last</em> car of the day or the <em>second-to-last</em>. The two official sources disagree.</p>
+      <ul class="tight" style="margin-top:8px">
+        <li><strong>If the website is right (last car 19:00)</strong> — you are fine. There is another car after yours. If you miss the 18:00, you catch the 19:00.</li>
+        <li><strong>If the brochure is right (last car 18:00)</strong> — <strong>yours is the last car of the day.</strong> If it is full, or you arrive five minutes late, or one person is still in the toilet, <strong>there is no next one and seven people are stuck on the mountain.</strong></li>
+      </ul>
       <p>The operator's printed 2026 brochure gives <strong>07.09.–02.11.2026, 08:00–18:00</strong> in both its German and Italian columns, and Tuesday 8 September is in that band. The English column has a typo; the website's 19:00 belongs to a band ending 6 September. Corroborated by the buses — Almbus line 11 and the Seiser Alm Express both withdraw their late runs after Sunday 6 September, so the whole network steps down on Monday 7 September.</p>
       <p><strong>Come down at 17:15–17:30 regardless.</strong> It costs 45 minutes on the plateau and removes the question entirely, and your 19:00 departure from Seis doesn't move. See <a href="#confirm">C4 · the last cable car</a>.</p>
     </div>
@@ -359,6 +367,7 @@ footer.end{margin-top:60px; padding:34px 0 54px; border-top:1px solid var(--line
 
   <div class="ann">
     <div class="a-open"><b class="m">Open · O1 · split Tuesday into two groups — this is the strongest move available</b>
+        <p class="ownline">👥 the group decides · 💃 <strong>Nhung</strong> records it in the plan sheet</p>
       <p><strong>Only the people in the photos go up Seceda.</strong> The others travel with just a day bag, at their own speed, and meet the shoot group for lunch.</p>
       <div class="opts">
         <div class="opt"><b>Shoot group — the couple + photographer, 3 people</b>Car from Bolzano 07:15, Ortisei 08:00, up on the first lift, shoot 09:00–12:00, down for lunch — then <strong>up Alpe di Siusi in the afternoon as well</strong>, because the shoot covers both mountains. This is the long day, and it is unavoidable. <span class="cost">3 × €74 Seceda + 3 × €30 cable car = €312</span></div>
@@ -462,7 +471,7 @@ footer.end{margin-top:60px; padding:34px 0 54px; border-top:1px solid var(--line
       <em>The question.</em> The ban ends at 17:00. The operator's own 2026 brochure says the parking reservation <em>"also applies to ascents after 17:00"</em>, which only makes sense if driving up in the evening is allowed. But another official page says you must pass the checkpoint by 09:30. <strong>The two pages contradict each other, so somebody has to ring and ask.</strong><br>
       <em>Why it is worth the call.</em> If the answer is yes, you drive up at 17:15 for <strong><span class="money">€30</span> for the whole car instead of <span class="money">€210</span></strong>, you shoot until sunset at 19:41 on an empty mountain, and you may drive down at any time — so <a href="#blockers">B2 · the last cable car</a> stops being a risk at all.
       <span class="who"><span class="owner own-may"><span class="av">💁‍♀️</span>May</span><span class="owner own-james"><span class="av">🙋‍♂️</span>James</span><em style="font-style:normal;color:var(--ink-3)">it's a parking reservation, not a lift ticket</em> <code>+39 0471 709600</code> · <code>info@seiseralm.it</code></span></li>
-    <li><span class="ic">🚡</span><strong>How many Seceda tickets are booked?</strong> The count has drifted from two to five to six across drafts. It needs to be <strong>seven</strong> — and at <span class="money">€74</span> each that is <span class="money">€518</span>, the single biggest line item of the trip.
+    <li><span class="ic">🚡</span><strong>How many Seceda cable-car tickets are booked?</strong> <em>Seceda is a mountain, not a venue — there is nothing to pay to be on it. The <span class="money">€74</span> is the return ticket for the lift that carries you up from Ortisei and back down.</em><br>The count has drifted from two to five to six across drafts. If everyone goes up it needs to be <strong>seven</strong>, which is <span class="money">€518</span> — the single biggest line item of the trip. If you take <a href="#pace">O1 · splitting Tuesday</a> it is only <strong>three</strong>, or <span class="money">€222</span>.
       <span class="who"><span class="owner own-may"><span class="av">💁‍♀️</span>May</span><code>booking confirmation</code></span></li>
     <li><span class="ic">🚡</span><strong>Does the photographer pay his own lifts?</strong> Seceda <span class="money">€74</span> plus Seiser Alm Bahn <span class="money">€30</span> is <span class="money">€104</span> on Tuesday. Worth settling before the day rather than at a ticket window.
       <span class="who"><span class="owner own-may"><span class="av">💁‍♀️</span>May</span><span class="owner own-couple"><span class="av">💑</span>The couple</span><code>the photographer</code></span></li>
@@ -494,7 +503,7 @@ footer.end{margin-top:60px; padding:34px 0 54px; border-top:1px solid var(--line
 <!-- ============ THE PLAN ============ -->
 <section id="plan"><div class="wrap">
   <h2><span class="num">06</span><span class="ic">🗓️</span>The plan, annotated</h2>
-  <p class="lede">These are your own blocks, in your words and at your times, with what the research says about each one. When two versions both work, this document gives the price of each and <strong>does not choose for you</strong>. Those are the <span class="chip ch-open">Open</span> items for the group to decide.</p>
+  <p class="lede">These are your own blocks, in your words and at your times, with what the research says about each one. When two versions both work, this document gives the price of each and <strong>does not choose for you</strong>. Those are the <span class="chip ch-open">Open</span> items for the group to decide — and once decided, 💃 <strong>Nhung</strong> puts the answer back into the sheet.</p>
 
   <!-- ===== MON ===== -->
   <article class="day alp">
@@ -539,6 +548,7 @@ footer.end{margin-top:60px; padding:34px 0 54px; border-top:1px solid var(--line
     <div class="blk">
       <div class="bh"><span class="t">17:00–21:00</span><span class="label verbatim"><span class="ic">🍽️</span>Ortisei + Dinner</span></div>
       <div class="ann"><div class="a-open"><b class="m">Open · O4 · is this a scouting run, or the evening itself?</b>
+        <p class="ownline">👥 the group decides · 💃 <strong>Nhung</strong> records it in the plan sheet</p>
         <p>Ortisei is <strong>~45 minutes each way</strong> from Bolzano and the lifts are long shut by 17:00. As written this is 90 minutes of driving, dinner in a resort village, a return through the ZTL near midnight — and a <strong>06:15 alarm</strong> the next morning on the biggest day of the trip.</p>
         <p>If the intention was to scout Tuesday's route, it isn't needed: Tuesday's 07:15 departure already includes that drive in daylight.</p>
         <div class="opts">
@@ -610,12 +620,20 @@ footer.end{margin-top:60px; padding:34px 0 54px; border-top:1px solid var(--line
       <div class="bh"><span class="t">15:00–18:00</span><span class="label verbatim"><span class="ic">🏔️</span>Alpe di Siusi</span></div>
       <div class="ann">
         <div class="a-stop"><b class="m">Blocker · B2 · your descent has an hour of margin, or none at all</b>
-          <p>Your sheet goes down <em>at</em> 18:00 and leaves Seis at 19:00. That plan is fine <strong>if the last car is at 19:00</strong>, as the website says. Then you take the second-to-last car and you have one hour spare.</p>
-          <p><strong>If the last car is 18:00, as the printed brochure says, you are planning to board the very last one.</strong> Same clock time, completely different risk: <strong>a full car, a five-minute delay, or one person in the loo — and there is no next one</strong>. That is the whole of this blocker — not that your times are wrong, but that their safety depends on an unresolved fact.</p>
+          <p>Your sheet rides the cable car down at 18:00, then leaves Seis at 19:00. <strong>Whether that is safe depends on one unanswered question: is 18:00 the last car of the day, or is there another one after it?</strong></p>
+          <div class="tw" style="margin:11px 0"><table style="min-width:0">
+            <thead><tr><th>If the last car is…</th><th>then your 18:00 ride is…</th></tr></thead>
+            <tbody>
+              <tr><td><strong>19:00</strong><br><span class="src">what the website says</span></td><td>the <strong>second-to-last</strong>. Safe — if you miss it, you catch the 19:00.</td></tr>
+              <tr><td><strong>18:00</strong><br><span class="src">what the printed brochure says</span></td><td>the <strong>very last one</strong>. Miss it and <strong>seven people are stuck on the mountain</strong>.</td></tr>
+            </tbody>
+          </table></div>
+          <p>You cannot tell which until you are standing there — and a cable car can leave full, or somebody can be five minutes late. <strong>Your times are not wrong. The problem is that their safety depends on a fact nobody has checked.</strong></p>
           <p><strong>So do not plan for 18:00 at all.</strong> Be at the Compatsch top station by <strong>17:15</strong> and take the first car that comes. You lose 45 minutes on the mountain, but you remove the whole risk. Your 19:00 departure from Seis does not change.</p>
           <p><a href="#confirm">C4 · the last cable car</a> settles it with one email, and it is the single highest-value message on this page.</p>
         </div>
         <div class="a-open"><b class="m">Open · O2 · the golden-hour version, worth €180 and the best light of the trip</b>
+        <p class="ownline">👥 the group decides · 💃 <strong>Nhung</strong> records it in the plan sheet</p>
           <p>The uphill ban <strong>lifts at 17:00</strong>, and the operator's own 2026 brochure states the parking reservation requirement <em>"gilt auch für Auffahrten nach 17:00 Uhr"</em> — it also applies to ascents after 17:00. That sentence only makes sense if evening ascents are permitted.</p>
           <div class="opts">
             <div class="opt"><b>A · Cable car up at 14:00, down at 17:45</b>Your plan, minus the last-lift risk. Flat afternoon light, busiest hours, and the descent is a hard deadline you cannot miss. <span class="cost">€210 · seven lift tickets</span></div>
@@ -694,6 +712,7 @@ footer.end{margin-top:60px; padding:34px 0 54px; border-top:1px solid var(--line
           <p>⚠️ San Candido's <strong>Collegiate Church hours are not published anywhere official</strong> (<span class="src">+39 0474 913149</span>). Park in the <strong>west car park — large and free</strong>; the east lot gives 3 hours then charges.</p>
         </div>
         <div class="a-open"><b class="m">Open · O3 · three defensible Wednesdays</b>
+        <p class="ownline">👥 the group decides · 💃 <strong>Nhung</strong> records it in the plan sheet</p>
           <div class="opts">
             <div class="opt"><b>A · Keep your plan, book Braies P3</b>Free morning intact, lake at 14:00, San Candido squeezed in after. The version closest to what you wrote. <span class="cost">€25 per car · €4.17 a head · must be booked ahead</span></div>
             <div class="opt"><b>B · Keep your plan, drop San Candido</b>Braies 14:00–17:00 at an unhurried pace, out after 16:00 when it empties, back to Brunico for an early dinner. San Candido is a church plus a pedestrian street — the smallest loss on the board. <span class="cost">€25 per car · buys back 90 min</span></div>
@@ -1007,7 +1026,7 @@ footer.end{margin-top:60px; padding:34px 0 54px; border-top:1px solid var(--line
   <div class="tw"><table>
     <thead><tr><th>Item</th><th>Each</th><th>Party total</th></tr></thead>
     <tbody>
-      <tr><td><strong>Seceda return, Tuesday</strong></td><td class="n money">€74.00</td><td class="n money"><strong>€518 at 7</strong> · ≈€493 online</td></tr>
+      <tr><td><strong>Seceda cable car</strong>, return, Tuesday</td><td class="n money">€74.00</td><td class="n money"><strong>€518 at 7</strong> · ≈€493 online</td></tr>
       <tr><td><strong>Seiser Alm Bahn return, Tuesday</strong></td><td class="n money">€30.00</td><td class="n money"><strong>€210 at 7</strong></td></tr>
       <tr><td>Venezia Daily Pass, 24 h — island day</td><td class="n money">€25.00</td><td class="n money">€150 at 6</td></tr>
       <tr><td>Aerobus 75-min ticket, VCE → Marghera</td><td class="n money">€10.00</td><td class="n money">€60 at 6</td></tr>
@@ -1038,6 +1057,46 @@ footer.end{margin-top:60px; padding:34px 0 54px; border-top:1px solid var(--line
 <section id="ref"><div class="wrap">
   <h2><span class="num">10</span><span class="ic">📌</span>Reference</h2>
   <p class="lede">These are the facts you may need to check while you stand at a barrier or a ticket desk. Research that did not match a block in your sheet was removed. The full sources are in <code>venice-dolomites-sep-2026-research.md</code>.</p>
+
+  <div class="card" style="border-left:4px solid var(--alpine)">
+    <h3 style="margin-top:0">🚗 The driving brief — everything for <span class="owner own-james"><span class="av">🙋‍♂️</span>James</span> in one place</h3>
+    <p>Monday 10:00 to Thursday 18:00. Every place you park, in the order you reach it.</p>
+    <div class="tw"><table>
+      <thead><tr><th>Where</th><th>Cost</th><th>Max height</th><th>Note</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Mon</strong> · Airport P1, VCE</td><td class="n">rental</td><td class="n">—</td><td>Desks on <strong>level 3</strong>, ~300 m from Arrivals. Take a ticket at the entrance.</td></tr>
+        <tr><td><strong>Mon</strong> · Bolzano — Walther ⭐</td><td class="n money">€24/24 h</td><td class="n">2.10 m</td><td>Closest, ~350 m. <strong>The tunnel entrance is exempt from the ZTL.</strong></td></tr>
+        <tr><td><strong>Mon</strong> · Bolzano — BZ Centro</td><td class="n money">€20/24 h</td><td class="n">2.00 m</td><td>Cheaper, slightly further.</td></tr>
+        <tr><td><strong>Mon</strong> · Bolzano — Laurin / Mondschein / Castel Mareccio</td><td class="n">€27/24 h · €2.80/h · €2.20/h</td><td class="n">2.30 m · 2.40 m · none</td><td>Use these <strong>if a roof bag is fitted</strong> — the car then stands about 2.0 m and Walther gets tight.</td></tr>
+        <tr><td><strong>Tue</strong> · Ortisei — Garage Seceda</td><td class="n">€2.50/30 min · ~<span class="money">€17</span></td><td class="n">—</td><td>At the cable-car valley station, Via Val d'Anna.</td></tr>
+        <tr><td><strong>Tue</strong> · Seis — cable-car station</td><td class="n"><strong>free</strong></td><td class="n">—</td><td>Schlernstraße 39. <strong>Closed 22:00–06:30</strong>, so don't leave the car overnight.</td></tr>
+        <tr><td><strong>Tue</strong> · Compatsch P2 <em>(only on O2)</em></td><td class="n money">€30/car</td><td class="n">—</td><td>Reservation only, booked exactly 6 days ahead. Single entry — leaving voids it.</td></tr>
+        <tr><td><strong>Wed</strong> · Braies P3, Eggerhof</td><td class="n money">€25/car</td><td class="n">2.20 m<br><span class="src">above = camper rate</span></td><td>Book ahead. Covers the transit permit, any arrival time, 400 m from the lake.</td></tr>
+        <tr><td><strong>Wed</strong> · Braies P2 <em>(only before 09:00)</em></td><td class="n">≤<span class="money">€7</span></td><td class="n">—</td><td>Pay on arrival. No booking needed before 09:00.</td></tr>
+        <tr><td><strong>Wed</strong> · San Candido — west car park</td><td class="n"><strong>free</strong></td><td class="n">—</td><td>Large. The <em>east</em> lot gives 3 hours free then charges.</td></tr>
+        <tr><td><strong>Wed/Thu</strong> · Lago di Dobbiaco · Misurina · Cortina</td><td class="n">paid ⚠️</td><td class="n">—</td><td><strong>No official tariff published for any of the three.</strong> Small sums; pay on arrival and keep coins.</td></tr>
+        <tr><td><strong>Tue–Thu</strong> · Brunico — Hölzlhof</td><td class="n"><strong>free</strong></td><td class="n">—</td><td>On the property. Ordinary open roads, no ZTL.</td></tr>
+      </tbody>
+    </table></div>
+
+    <h4>Roads — what could actually delay you</h4>
+    <ul class="tight">
+      <li><strong>A4 at Verona Est</strong> (km 289.7–290.3): lanes narrowed for high-speed-rail works, <strong>both directions, and this one is on your route</strong> — Monday out and Thursday back. No specific September dates published.</li>
+      <li><strong>A22 Brennero–Vipiteno</strong> (km 8.8–12.0), 14 Jul – 2 Oct: a carriageway deviation, but it is <strong>north of Bolzano and does not affect you</strong>. Noted so you don't worry when you see it announced.</li>
+      <li><strong>SS51 Cortina → Pian di Vedoia</strong>: the Milano-Cortina Games ran there in February 2026 and post-event works are a real risk on a single-carriageway mountain road. <strong>Thursday has no spare time</strong> — check ANAS the week before (<a href="#confirm">C13 · SS51 roadworks</a>).</li>
+      <li><strong>Southbound A22 queues</strong> in the Adige valley on holiday-return days. Your Monday run north is the quiet direction.</li>
+      <li><strong>Winter tyres are not required</strong> — the obligation runs 15 Nov to 15 Apr only.</li>
+    </ul>
+
+    <h4>Tolls</h4>
+    <p>VCE → Bolzano Sud is <strong><span class="money">€20.20</span></strong> at Class A: take the ticket at the Venezia-Mestre barrier and pay once at Bolzano Sud, with no booths in between. Cortina → VCE on the A27 is about <strong><span class="money">€8.60</span></strong>. ⚠️ Class A means under 1.30 m measured at the front axle; taller is Class B and costs meaningfully more (<a href="#confirm">C12 · toll class</a>).</p>
+
+    <h4>If a ZTL fine arrives weeks later</h4>
+    <p><strong>Challenge the hire company's "admin fee" separately from the fine itself.</strong> Hertz Italy's own June 2026 terms state that where Italian consumer law applies, <em>"le Spese di Gestione Multe non saranno applicate"</em> — the fine-handling charge shall not be applied — and the Italian competition authority has held such clauses unfair. Check your own supplier's Italian T&amp;Cs. The fine is yours; the admin fee may not be.</p>
+
+    <h4>At handover, Thursday 18:00</h4>
+    <p><strong>Refuel before you reach the airport</strong> — airport fuel is dear and a "not returned full" charge is dearer. Follow "Rent a car / P1 – top floor", take a ticket at the P1 entrance, drive to level 3. <strong>Photograph the fuel gauge, the mileage and all four corners.</strong> That is your only protection against charges appearing weeks later. Confirm the desk is staffed at 18:00 and ask about the after-hours key drop (<a href="#confirm">C11 · rental desk at 18:00</a>).</p>
+  </div>
 
   <div class="grid">
     <div class="card">
